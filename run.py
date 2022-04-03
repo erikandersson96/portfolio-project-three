@@ -14,3 +14,19 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
+def game_start(): 
+    """
+    Start up the game, welcome message and start up the meny with options
+    """
+    clear()
+    print("Hello there! Welcome to this Formula One Quiz!")
+    print("""
+
+        #########     ##            ##         ##      ##   ##    ########
+        ##          ####         ##    ##      ##      ##   ##         ##
+        ##            ##        ##      ##     ##      ##   ##        ##
+        #######       ##       ##        ##    ##      ##   ##       ##
+        ##            ##        ##      ##     ##      ##   ##      ##
+        ##            ##         ##    ##      ##      ##   ##     ##
+        ##          ######         #######        ####      ##    ########
+    """)
