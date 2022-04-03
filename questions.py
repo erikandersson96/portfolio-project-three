@@ -1,4 +1,4 @@
-formula_one_questions = [
+formula_questions = [
     {
         "question": "The year is 2004, \
             and the driver is Michael Schumacher. Name the team mate?:", 
