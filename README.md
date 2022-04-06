@@ -28,15 +28,57 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 ## Table of Contents
 
-* UX(#ux) 
-  * Strategy(#strategy)
-  * Visitor Goals(#visitor-goals) 
-  * User Stories(#user-stories) 
-* Logic(#logic) 
-  * Flow Diagram(#flow-diagram) 
-  * Comparison(#comparison) 
-* (#)
-* (#)
-* (#)
-* Support(#support) 
-  
+* [UX](#ux) 
+  * [Strategy](#strategy)
+  * [Visitor Goals](#visitor-goals) 
+  * [User Stories](#user-stories) 
+
+* [Logic](#logic) 
+  * [Flow Diagram](#flow-diagram) 
+  * [Comparison](#comparison) 
+
+* [Testing](#testing)
+  * [Manual Testing](#manual-testing)
+  * [Validation](#validation)
+
+* [Python Libraries](#python-libraries)
+
+* [Credits](#credits)
+
+* [Deployment](#deployment)
+
+* [Support](#support) 
+
+
+## UX 
+
+
+## Logic 
+
+
+## Testing
+
+### Manual Testing
+
+### Validation
+
+
+## Python Libraries 
+
+
+## Credits
+
+
+## Deployment
+
+
+## Support 
+
+I would like to give an extra `Thank you` to all the kind people I have around me that gave me support in all different ways. 
+
+* **Code Institute** for their **Tutor** support. 
+* My mentor [Benjamin Kavanagh](https://github.com/BAK2K3) for being a **Superior** mentor.
+* **Google** for always clear things up.
+* My lovely **Girlfriend** for always supporting and believing in me.
+
+### RETURN TO THE [TOP](#formula-one-quiz)
