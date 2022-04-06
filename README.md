@@ -28,10 +28,15 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 ## Table of Contents
 
-* UX 
-  * Strategy
-  * Visitor Goals 
-  * User Stories 
-* Logic 
-  * Flow Diagram 
-  * Comparison 
+* UX(#ux) 
+  * Strategy(#strategy)
+  * Visitor Goals(#visitor-goals) 
+  * User Stories(#user-stories) 
+* Logic(#logic) 
+  * Flow Diagram(#flow-diagram) 
+  * Comparison(#comparison) 
+* (#)
+* (#)
+* (#)
+* Support(#support) 
+  
