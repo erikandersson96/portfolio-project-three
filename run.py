@@ -134,7 +134,7 @@ def start_random_quiz():
 
 def user_question():
     """
-    Displays the random generated question for the user 
+    Display the random generated question for the user 
     """
     i = 0
     point = 0 
