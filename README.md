@@ -28,3 +28,10 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 ## Table of Contents
 
+* UX 
+  * Strategy
+  * Visitor Goals 
+  * User Stories 
+* Logic 
+  * Flow Diagram 
+  * Comparison 
