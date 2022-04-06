@@ -6,6 +6,7 @@ import os
 import time 
 import random 
 
+from pyfiglet import figlet_format
 
 def clear(): 
     """
@@ -21,7 +22,7 @@ def game_start():
     clear()
     print("Hello there! Welcome to this Formula One Quiz!")
     print("""
-
+    
         #########     ##            ##         ##      ##   ##    ########
         ##          ####         ##    ##      ##      ##   ##         ##
         ##            ##        ##      ##     ##      ##   ##        ##
