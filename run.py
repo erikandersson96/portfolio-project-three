@@ -5,8 +5,8 @@ from questions import formula_questions
 import os 
 import time 
 import random 
+import pyfiglet
 
-from pyfiglet import figlet_format
 
 def clear(): 
     """
@@ -21,13 +21,5 @@ def game_start():
     """
     clear()
     print("Hello there! Welcome to this Formula One Quiz!")
-    print("""
-    
-        #########     ##            ##         ##      ##   ##    ########
-        ##          ####         ##    ##      ##      ##   ##         ##
-        ##            ##        ##      ##     ##      ##   ##        ##
-        #######       ##       ##        ##    ##      ##   ##       ##
-        ##            ##        ##      ##     ##      ##   ##      ##
-        ##            ##         ##    ##      ##      ##   ##     ##
-        ##          ######         #######        ####      ##    ########
-    """)
+    f1_text = pyfiglet.figlet_format("F 1  Q U I Z", font = "3-d")
+    print(f1_text)
