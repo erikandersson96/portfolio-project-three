@@ -117,6 +117,23 @@ def get_username():
         get_username()
 
 
+def start_random_quiz(): 
+    """
+    Start the quiz and generate a random question from questions.py 
+    """
+    previous_question = []
+    quiz_question = []
+    while quiz_question < 12: 
+        x = random.randint(0, (len(formula_questions) -1))
+        if x not in previous_question: 
+            previous_question.append(x)
+            quiz_question.append(formula_questions[x])
+    return quiz_question
+
+
+
+
+
 
 
 
