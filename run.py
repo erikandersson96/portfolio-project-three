@@ -58,7 +58,7 @@ def main_meny_options():
                     print("Start Quiz")
                     break 
                 elif option == 'R': 
-                    print("Rules")
+                    game_rules()
                     break
     except Exception: 
         clear()
@@ -66,6 +66,42 @@ def main_meny_options():
         either Start Quiz or see the Rules. Please type the following to 
         continue: 's or S' for Start Quiz or 'r or R' to see the Rules.\n""")
         user_game_meny()
+
+
+def game_rules(): 
+    """
+    To display the game rules for the user 
+    """
+    clear()
+    print("Welcome to Game Rules!")
+    print("""
+        This quiz consists of 12 questions, and the answer for each question
+        will be either one of two options that are displayed underneath.
+        you will have to Type either '1' or '2' to select the answer you
+        think is the correct one and press Enter. The quiz will countinue
+        until all 12 questions has been asked. Good luck!\n""")
+    print("Type 'm or M' to return to the Menu.")
+    try: 
+        while True: 
+            back_to_menu = input("")
+            back_to_menu = back_to_menu.upper()
+            if back_to_menu not in ["M"]: 
+                raise Exception
+            else: 
+                main_meny_options()
+    except Exception: 
+        clear()
+        print("Did you really press 'm or M'? Try again!")
+        time.sleep(2)
+        game_rules()
+                
+
+
+
+
+
+
+
 
 
 game_start()
