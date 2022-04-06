@@ -68,6 +68,11 @@ def main_meny_options():
         user_game_meny()
 
 
+
+
+
+
+
 def game_rules(): 
     """
     To display the game rules for the user 
@@ -164,17 +169,24 @@ def correct_answer_question(quiz_question):
         return 2
 
 
-
-
-
-
-
-
-
-
-
-
-
+def user_answer_input(): 
+    """
+    Here it checks what the user inputted as answer between the two options and
+    if it is a valid input  
+    """
+    print(f"What do you think is the correct answer of 1 or 2 {user_name}?")
+    while True: 
+        try: 
+            user_answer = input("1 or 2:\n")
+            user_answer = int(user_answer)
+            print(f"Your answer is {int(user_answer)}.")
+            if user_answer not in [1, 2]: 
+                raise Exception
+            else: 
+                return user_answer
+        except Exception: 
+            print("Only enter eiter 1 or 2. You entered something else then 1 or 2. ")
+            user_answer_input()
 
 
 
