@@ -30,11 +30,14 @@ def user_game_meny():
     Game meny with the two options of either start the quiz or watch game 
     rules for the quiz
     """ 
-    print("Are you ready for some Formula One questions?")
+    print("Are you ready for some Formula One questions?\n")
+    print("""Select either Start Quiz or Rules in the meny below by  
+    following the instructions underneath the meny options.""")
     print("""
     -        Start Quiz        -
     -           Rules          -
 
+    Instructions: 
     Type 's or S' to start the quiz, type 'r or R' to see the Rules.\n""")
     main_meny_options()
 
@@ -59,7 +62,7 @@ def main_meny_options():
                     break
     except Exception: 
         clear()
-        print("""Wrong... You did not type 's or S' or 'r or R' to choose 
+        print("""Wrong...! You did not type 's or S' or 'r or R' to choose 
         either Start Quiz or see the Rules. Please type the following to 
         continue: 's or S' for Start Quiz or 'r or R' to see the Rules.\n""")
         user_game_meny()
