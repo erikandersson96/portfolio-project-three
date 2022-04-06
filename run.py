@@ -55,7 +55,7 @@ def main_meny_options():
                 raise Exception
             else: 
                 if option == 'S':
-                    print("Start Quiz")
+                    get_username()
                     break 
                 elif option == 'R': 
                     game_rules()
@@ -96,6 +96,25 @@ def game_rules():
         game_rules()
                 
 
+def get_username(): 
+    """
+    Get the users name to make the Quiz more personal for the player 
+    """
+    clear()
+    print("""Before we can start the quiz for you, you need a username!\n
+    You can choose anything you want but it can't be longer then 
+    14 characters and it has to be in letters 
+    (not numbers or special characters).\n""")
+    try: 
+        while True: 
+            user_name = str(input("Write your username: \n"))
+            if len(user_name) <= 14 and user_name.isalpha(): 
+                print(f"Thank you {user_name}! One step closer to start the quiz.")
+                return user_name
+            else: 
+                print("Not longer then 14 characters, written with numbers or special characters!")
+    except Exception: 
+        get_username()
 
 
 
