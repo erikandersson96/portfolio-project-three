@@ -112,7 +112,7 @@ def get_username():
                 print(f"Thank you {user_name}! One step closer to start the quiz.")
                 return user_name
             else: 
-                print("Not longer then 14 characters, written with numbers or special characters!")
+                print("Not longer then 14 characters, written with numbers or special characters!\n")
     except Exception: 
         get_username()
 
