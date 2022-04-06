@@ -68,11 +68,6 @@ def main_meny_options():
         user_game_meny()
 
 
-
-
-
-
-
 def game_rules(): 
     """
     To display the game rules for the user 
@@ -114,6 +109,7 @@ def get_username():
         while True: 
             user_name = str(input("Write your username: \n"))
             if len(user_name) <= 14 and user_name.isalpha(): 
+                clear()
                 print(f"Thank you {user_name}! One step closer to start the quiz.")
                 return user_name
             else: 
@@ -140,7 +136,7 @@ def user_question():
     """
     Displays the random generated question for the user 
     """
-    i = 0 
+    i = 0
     point = 0 
     while i < 12: 
         print(quiz_question[i]["question"])
@@ -174,7 +170,7 @@ def user_answer_input():
     Here it checks what the user inputted as answer between the two options and
     if it is a valid input  
     """
-    print(f"What do you think is the correct answer of 1 or 2 {user_name}?")
+    print("What do you think is the correct answer of 1 or 2?")
     while True: 
         try: 
             user_answer = input("1 or 2:\n")
@@ -185,7 +181,7 @@ def user_answer_input():
             else: 
                 return user_answer
         except Exception: 
-            print("Only enter eiter 1 or 2. You entered something else then 1 or 2. ")
+            print("Only enter eiter '1 or 2'. You entered something else. ")
             user_answer_input()
 
 
