@@ -63,7 +63,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 #### Bugs & solutions
 
 * **Bug 1:** 
-Write wrong character option when answer a question. 
+Write wrong character option when user answer a question. 
 When playing the quiz, if the user inputs a wrong character instead of '1 or 2' which are the only accepted answers the 
 user will get a warning that says `"Only enter eiter '1 or 2'. You entered something else. "` to let the user know that 
 he or she didn't input a valid value. But if the user then tries to choose either '1 or 2' the program will repeat the same 
@@ -75,6 +75,17 @@ issue and won't let the user input the valid value to countinue the quiz.
 
 **Bug 1 Solution:**
 
+**Bug 2:** 
+When exit the game Rules. 
+When the user is finsihed reading the game Rules for the quiz, he or she is supposed to Type 'm or M' and then press enter to 
+get back to the Meny. But when the user does this the program doesn't respond correctly before the user tries for the second time. 
+When the user types 'm or M' and press enter, first nothing happens so when the user then repeat's the process a second time the program 
+responds and get the user back to the Meny but it gives the user a error message above the Meny that the user didn't use the correct 
+command. So the program gets quite confusing for the user when this bug happens. 
+
+**Screenshot:** 
+
+![Screenshot bug 1](/assets/images/bug2.png)
 
 
 
