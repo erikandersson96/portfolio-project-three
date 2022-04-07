@@ -76,7 +76,7 @@ issue and won't let the user input the valid value to countinue the quiz.
 
 **Bug 1 Solution:**
 
-**Bug 2:** 
+* **Bug 2:** 
 When exit the game Rules. 
 When the user is finsihed reading the game Rules for the quiz, he or she is supposed to Type 'm or M' and then press enter to 
 get back to the Meny. But when the user does this the program doesn't respond correctly before the user tries for the second time. 
@@ -89,6 +89,19 @@ command. So the program gets quite confusing for the user when this bug happens.
 ![Screenshot bug 1](/assets/images/bug2.png)
 
 **Bug 2 solution:** 
+
+* **Bug 3:**
+End message doesn't show up. 
+When the user has answered all of the selected questions (6 or 12). The end message should show up with: 
+`Well done! I hope your Formula One knowledge got a little better with this quiz.`, `{user_name} you scored at total of {point} points!`.
+`{user_name}` and `{points}` is used in an f-string to input the user name of the user and the total points that the user scored. 
+But the end message does not show up at all, the Quiz just goes back to the the meny with the same error above the meny as with **Bug 2**. 
+
+**Screenshot:**
+
+![Screenshot bug 1](/assets/images/bug2.png)
+
+**Solution:**
 
 
 ### Validation
