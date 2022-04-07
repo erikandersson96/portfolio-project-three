@@ -58,7 +58,26 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 ## Testing
 
-### Manual Testing
+### Manual Testing 
+
+#### Bugs & solutions
+
+* **Bug 1:** 
+Write wrong character option when answer a question. 
+When playing the quiz, if the user inputs a wrong character instead of '1 or 2' which are the only accepted answers the 
+user will get a warning that says `"Only enter eiter '1 or 2'. You entered something else. "` to let the user know that 
+he or she didn't input a valid value. But if the user then tries to choose either '1 or 2' the program will repeat the same 
+issue and won't let the user input the valid value to countinue the quiz. 
+
+**Screenshot:**
+
+![Screenshot bug 1](/assets/images/) 
+
+**Bug 1 Solution:**
+
+
+
+
 
 ### Validation
 
