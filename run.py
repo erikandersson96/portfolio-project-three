@@ -111,7 +111,7 @@ def get_username():
             if len(user_name) <= 14 and user_name.isalpha(): 
                 clear()
                 print(f"Thank you {user_name}! One step closer to start the quiz.")
-                return user_name
+                return user_name 
             else: 
                 print("Not longer then 14 characters, written with numbers or special characters!\n")
     except Exception: 
@@ -123,6 +123,7 @@ def how_many_questions():
     """
     User get to choose to play either 6 or 12 questions 
     """
+    clear()
     print("How many questions would you like to play?")
     while True: 
         try: 
@@ -162,12 +163,15 @@ def user_question(quiz_question, amount_questions):
         print(quiz_question[i]["question"])
         print(f"1 - {quiz_question[i]['options'][0]}")
         print(f"2 - {quiz_question[i]['options'][1]}")
+        print("")
         correct_answer = correct_answer_question(quiz_question[i])
         user_answer = user_answer_input()
         if user_answer == correct_answer: 
+            print("")
             point += 1 
             print(f"Correct! Well done. You scored {point} points!")
         else: 
+            print("")
             print("Oh no you guessed wrong. Better luck in the next question!")
         time.sleep(4)
         i = i + 1 
