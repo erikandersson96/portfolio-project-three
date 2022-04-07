@@ -167,14 +167,13 @@ def user_question(quiz_question, amount_questions):
         correct_answer = correct_answer_question(quiz_question[i])
         user_answer = user_answer_input()
         if user_answer == correct_answer: 
-            print("")
             point += 1 
-            print(f"Correct! Well done. You scored {point} points!")
+            print(f"Correct! Well done. You scored {point} points!\n")
         else: 
-            print("")
-            print("Oh no you guessed wrong. Better luck in the next question!")
+            print("Oh no you guessed wrong. Better luck in the next question!\n")
         time.sleep(4)
-        i = i + 1 
+        i = i + 1
+        clear() 
     return point 
 
 
