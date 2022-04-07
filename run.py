@@ -55,7 +55,7 @@ def main_meny_options():
                 raise Exception
             else: 
                 if option == 'S':
-                    get_username()
+                    main()
                     break 
                 elif option == 'R': 
                     game_rules()
@@ -75,11 +75,11 @@ def game_rules():
     clear()
     print("Welcome to Game Rules!")
     print("""
-        This quiz consists of 12 questions, and the answer for each question
+        This quiz consists of 6 or 12 questions, and the answer for each question
         will be either one of two options that are displayed underneath.
-        you will have to Type either '1' or '2' to select the answer you
+        You will have to Type either '1' or '2' to select the answer you
         think is the correct one and press Enter. The quiz will countinue
-        until all 12 questions has been asked. Good luck!\n""")
+        until all questions has been played for the selected amount. Good luck!\n""")
     print("Type 'm or M' to return to the Menu.")
     try: 
         while True: 
@@ -116,23 +116,43 @@ def get_username():
                 print("Not longer then 14 characters, written with numbers or special characters!\n")
     except Exception: 
         get_username()
+    how_many_questions()
 
 
-def start_random_quiz(): 
+def how_many_questions(): 
     """
-    Start the quiz and generate a random question from formula_questions 
+    User get to choose to play either 6 or 12 questions 
+    """
+    print("How many questions would you like to play?")
+    while True: 
+        try: 
+            amount_questions = int(input("6 or 12:\n"))
+            if amount_questions not in [6, 12]: 
+                raise Exception 
+            else: 
+                clear()
+                return amount_questions 
+        except Exception: 
+            print("You didn't Type in '6 or 12', please choose only one!")
+    
+
+
+def start_random_quiz(amount_questions): 
+    """
+    Generate a random question from formula_questions 
     """
     previous_question = []
     quiz_question = []
     while quiz_question < 12: 
-        x = random.randint(0, (len(formula_questions) -1))
+        x = random.randint(0, (len(formula_questions) - 1))
         if x not in previous_question: 
             previous_question.append(x)
             quiz_question.append(formula_questions[x])
-    return quiz_question
+    return quiz_question 
+    
 
 
-def user_question():
+def user_question(quiz_question, amount_questions):
     """
     Display the random generated question for the user 
     """
@@ -142,7 +162,6 @@ def user_question():
         print(quiz_question[i]["question"])
         print(f"1 - {quiz_question[i]['options'][0]}")
         print(f"2 - {quiz_question[i]['options'][1]}")
-        
         correct_answer = correct_answer_question(quiz_question[i])
         user_answer = user_answer_input()
         if user_answer == correct_answer: 
@@ -186,6 +205,17 @@ def user_answer_input():
 
 
 
+
+def main(): 
+    """
+    Main holds all function calls
+    """
+    user_name = get_username()
+    amount_questions = how_many_questions()
+    quiz_question = start_random_quiz(amount_questions)
+    point = user_question(quiz_question, amount_questions)
+    game_start()
+  
 
 
 game_start()
