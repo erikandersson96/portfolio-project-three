@@ -220,7 +220,6 @@ def end_message(user_name, point):
     
 
 
-
 def main(): 
     """
     Main holds all function calls
@@ -229,8 +228,9 @@ def main():
     amount_questions = how_many_questions()
     quiz_question = start_random_quiz(amount_questions)
     point = user_question(quiz_question, amount_questions)
-    end_message()
+    end_message(user_name, point)
+    game_start()
+    
   
-
 
 game_start()
