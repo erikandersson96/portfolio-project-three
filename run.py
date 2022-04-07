@@ -19,6 +19,7 @@ def game_start():
     """
     Start up the game, welcome message and start up the meny with options
     """
+    print("")
     print("Hello player! Welcome to this Formula One Quiz!\n")
     f1_text = pyfiglet.figlet_format("F 1  Q U I Z", font = "3-d")
     print(f1_text)
