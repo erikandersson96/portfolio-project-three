@@ -39,6 +39,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
+    * [Bugs & Solutions](#bugs--solutions)
   * [Validation](#validation)
 
 * [Python Libraries](#python-libraries)
@@ -87,7 +88,7 @@ command. So the program gets quite confusing for the user when this bug happens.
 
 ![Screenshot bug 1](/assets/images/bug2.png)
 
-
+**Bug 2 solution:** 
 
 
 ### Validation
