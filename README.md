@@ -71,7 +71,7 @@ issue and won't let the user input the valid value to countinue the quiz.
 
 **Screenshot:**
 
-![Screenshot bug 1](/assets/images/) 
+![Screenshot bug 1](/assets/images/bug1.png) 
 
 **Bug 1 Solution:**
 
