@@ -8,7 +8,7 @@ in Formula One, play the quiz.
 
 To play the quiz you can click this [link](link). 
 
-[Am I responsive?]()
+![Screenshot of Welcome message Formula One Quiz](/assets/images/welcome.png)
 
 
 ## Portfolio Project Three 
