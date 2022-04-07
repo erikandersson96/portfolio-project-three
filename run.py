@@ -143,7 +143,7 @@ def start_random_quiz(amount_questions):
     """
     previous_question = []
     quiz_question = []
-    while quiz_question < 12: 
+    while len(quiz_question) < amount_questions: 
         x = random.randint(0, (len(formula_questions) - 1))
         if x not in previous_question: 
             previous_question.append(x)
@@ -204,6 +204,18 @@ def user_answer_input():
             user_answer_input()
 
 
+def end_message(user_name, point): 
+    """
+    End message with information about the users name and point
+    """
+    clear()
+    print("""
+    Well done! I hope your Formula One knowledge got a little
+    better with this quiz.\n""")
+    print(f"{user_name} you scored at total of {point} points!")
+    time.sleep(10)
+    
+
 
 
 def main(): 
@@ -214,7 +226,7 @@ def main():
     amount_questions = how_many_questions()
     quiz_question = start_random_quiz(amount_questions)
     point = user_question(quiz_question, amount_questions)
-    game_start()
+    end_message()
   
 
 
