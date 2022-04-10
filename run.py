@@ -195,18 +195,19 @@ def user_answer_input():
     Here it checks what the user inputted as answer between the two options and
     if it is a valid input  
     """
-    print("What do you think is the correct answer of 1 or 2?")
+    print("What do you think is the correct answer?")
     while True: 
         try: 
             user_answer = input("1 or 2:\n")
             user_answer = int(user_answer)
-            print(f"Your answer is {int(user_answer)}.")
+            print("")
+            print(f"Your answer is {int(user_answer)}.\n")
             if user_answer not in [1, 2]: 
                 raise Exception
             else: 
                 return user_answer
         except Exception: 
-            print("Only enter eiter '1 or 2'. You entered something else. ")
+            print("Only enter eiter '1 or 2'. You entered something else... ")
             user_answer_input()
 
 
