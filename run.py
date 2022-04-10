@@ -109,20 +109,20 @@ def get_username():
         while True: 
             user_name = str(input("Write your username: \n"))
             if len(user_name) <= 14 and user_name.isalpha(): 
-                clear()
                 print(f"Thank you {user_name}! One step closer to start the quiz.")
                 return user_name 
             else: 
                 print("Not longer then 14 characters, written with numbers or special characters!\n")
     except Exception: 
         get_username()
-    how_many_questions()
+    
 
 
 def how_many_questions(): 
     """
     User get to choose to play either 6 or 12 questions 
     """
+    time.sleep(4)
     clear()
     print("How many questions would you like to play?")
     while True: 
