@@ -36,10 +36,9 @@ def user_game_meny():
     following the instructions underneath the meny options.""")
     print("""
     -        Start Quiz        -
-    -           Rules          -
-
-    Instructions: 
-    Type 's or S' to start the quiz, type 'r or R' to see the Rules.\n""")
+    -           Rules          -\n""")
+    print("Instructions:")
+    print("Type 's or S' to start the quiz, type 'r or R' to see the Rules.")
     main_meny_options()
 
 
