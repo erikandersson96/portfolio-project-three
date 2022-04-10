@@ -67,6 +67,7 @@ def main_meny_options():
         continue: 's or S' for Start Quiz or 'r or R' to see the Rules.\n""")
         user_game_meny()
 
+# game_rules() won't accept "m" as a valid option to get back to the menu...?
 
 def game_rules(): 
     """
@@ -88,7 +89,9 @@ def game_rules():
             if back_to_menu not in ["M"]: 
                 raise Exception
             else: 
-                main_meny_options()
+                if back_to_menu == 'M':
+                    main_meny_options() 
+                    break
     except Exception: 
         clear()
         print("Did you really press 'm or M'? Try again!")
@@ -173,7 +176,7 @@ def user_question(quiz_question, amount_questions):
             point += 1 
             print(f"Correct! Well done. You scored {point} points!\n")
         else: 
-            print("Oh no you guessed wrong. Better luck in the next question!\n")
+            print(f"Oh no you guessed wrong. Better luck in the next question!\n")
         time.sleep(4)
         i = i + 1
         clear() 
@@ -189,6 +192,9 @@ def correct_answer_question(quiz_question):
     elif quiz_question['correct'] == quiz_question['options'][1]: 
         return 2
 
+
+# user_answer_input(). If i type the wrong character instead of 1 or 2 it shows the exception 
+# but when I try to do it correct (1 or 2) it doesn't take it as a valid input before second try?
 
 def user_answer_input(): 
     """
@@ -210,6 +216,8 @@ def user_answer_input():
             print("Only enter eiter '1 or 2'. You entered something else... ")
             user_answer_input()
 
+
+# end_message() won't show up at all after all the selected questions are finished, why?
 
 def end_message(user_name, point): 
     """
