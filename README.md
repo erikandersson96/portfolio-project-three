@@ -174,6 +174,32 @@ For this project I used Code Institutes Python template that can be found [here]
 1. Click create repository. 
 1. **Remember** to use the `commit` commands that I explained above so your hard work doesn't get lost if anything happens to Gitpod. 
 
+#### Forking GitHub Repository
+
+Forking a Github repository is the process of making a copy of someone else repository and add your own changes to it without changing the original, the original repository is known 
+as "upstream repository". I will explain the process of forking down below: 
+
+1. Go to the Github page that hosts the repository you wish to fork. 
+1. In the top-right corner of the page there is a button that says `"Fork"`. 
+1. Click this button. 
+1. This creates a copy of that repository to your Github home page. You can submit and receive changes to your copy by using pull requests and/or syncing with the original upstream repository. 
+
+This instructions were taken from [Github - Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
+
+#### Cloning GitHub Repository
+
+Cloning a repository inolves making a full copy of a repository on your local machine. This allows you to work on the code easier. Changes can be pushed back up to the Github site or changes from other sources pulled to your local copy. I will explain how to clone down below: 
+
+1. Go to the repository page on Github. 
+1. Above the file list click on the green button that says `"Code"`. 
+1. You can choose to download a zip file of the repository, to unpack it on your local machine and open it in your IDE. 
+1. Clone using HTTPS by copying the URL under the HTTPS tab. 
+1. Open a terminal window, set current directory to the one you want to contain the clone from. 
+1. Type `git clone` and paste the URL copied from the Github page. 
+1. The repository clone will now be created on your machine. 
+
+This instructions were taken from [Github - cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
 
 ## Support 
 
