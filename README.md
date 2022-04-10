@@ -53,6 +53,27 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 ## UX 
 
+#### Strategy 
+
+This Formula One Quiz was created with the intention to test peoples knowledge in the sport. A game that people can share among thier friends and family to challenge each other's knowledge. 
+Since the whole game is operated entirely in the terminal with no colorful graphics the user can then try to imagine how the different drivers, team's and situations would look like 
+for that given time. 
+
+#### Visitor Goals 
+
+* To create a simple and fun Quiz for everyone above 14+ years old. 
+* To give the user a simple navigation at the main menu with simple instructions. 
+* To always provide the user with all the information about which question that is displayed of the amount that the user choose (6 or 12) 
+and count how many points the user has scored for each question. 
+
+#### User Stories 
+
+* **A user's perspective:** I want to easily understand the purpose of the site.  
+* **A user's perspective:** I want the quiz to have clear instructions about how the game works. 
+* **A user's perspective:** I want the game to always provide me with information about how many questions I have played and have left, also how many points I have scored. 
+
+
+
 
 ## Logic 
 
