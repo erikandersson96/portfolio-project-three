@@ -143,12 +143,36 @@ But the end message does not show up at all, the Quiz just goes back to the the 
 * **Time:** I choose to import time to be able to set time delays `(time.sleep(seconds))` within certain functions so the Quiz doesn't executes to fast for the user to be able read the information.  
 * **Random:** I had to import random in order for me to generate a random order of the questions for the user. 
 This Formula One Quiz was created with the intention to test peoples knowledge in the sport. A game that people can share among their friends and family to challenge each other's knowledge. 
-* **Pyfiglet:** I choose to import [pyfiglet](https://pypi.org/project/pyfiglet/0.7/) (link) so I could display `"F1 QUIZ"` in a 3d look without the need to create it myself. Take a look at their website to get all of the instructions to how you can implement it your self to your python project. 
+* **Pyfiglet:** I choose to import [pyfiglet](https://pypi.org/project/pyfiglet/0.7/) (link) so I could display `"F1 QUIZ"` in a 3d look without the need to create it myself. Take a look at their website to get all of the instructions to how you can implement it your self to your next python project. 
 
 ## Credits
 
 
-## Deployment
+## Deployment 
+
+**GitHub:**
+
+I frequently used `commit` throughout the whole project, this is the commands used in the terminal: 
+
+* `git add .` (This command is used for adding files to the staging area before committing).
+* `git commit -m “commit message here..”` (This is used to label the commit changes made to the local repository).
+* `git push` (This command is used to push all changes to the Github repository). 
+
+This is all done to prevent any `data` loss in case Gitpod crashes.
+
+---
+#### GitHub & Gitpod 
+
+For this project I used Code Institutes Python template that can be found [here](https://github.com/Code-Institute-Org/python-essentials-template) (link). 
+
+**Steps to create a new repository in Github:**
+
+1. Sign in or sign up to [GitHub](https://github.com) (link). 
+1. When you have done that, you will see `"new"` ![Screenshot new repository button github](/assets/images/github.png) up in the left corner. 
+1. Select in the dropdown menu under `Repository template` if you for example would like to use the template provided by `Code Institute` that I did for this project. If you don't see it in the dropdown menu click this [link](https://github.com/Code-Institute-Org/python-essentials-template) to get to the one provided by `Code Institute` and click `Use this template` to the left of the green Gitpod button.
+1. When you have done that, give the repository a name. Leave it public if you want anyone on the internet to see your repository (I always do). 
+1. Click create repository. 
+1. **Remember** to use the `commit` commands that I explained above so your hard work doesn't get lost if anything happens to Gitpod. 
 
 
 ## Support 
