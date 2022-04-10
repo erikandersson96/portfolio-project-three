@@ -159,7 +159,10 @@ def user_question(quiz_question, amount_questions):
     """
     i = 0
     point = 0 
+    question = 0
     while i < 12: 
+        question += 1
+        print(f"Question {question}/{amount_questions}.\n")
         print(quiz_question[i]["question"])
         print(f"1 - {quiz_question[i]['options'][0]}")
         print(f"2 - {quiz_question[i]['options'][1]}")
@@ -230,7 +233,7 @@ def main():
     point = user_question(quiz_question, amount_questions)
     end_message(user_name, point)
     game_start()
-    
-  
+
+
 
 game_start()
