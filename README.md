@@ -55,7 +55,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 #### Strategy 
 
-This Formula One Quiz was created with the intention to test peoples knowledge in the sport. A game that people can share among thier friends and family to challenge each other's knowledge. 
+This Formula One Quiz was created with the intention to test peoples knowledge in the sport. A game that people can share among their friends and family to challenge each other's knowledge. 
 Since the whole game is operated entirely in the terminal with no colorful graphics the user can then try to imagine how the different drivers, team's and situations would look like 
 for that given time. 
 
@@ -68,14 +68,21 @@ and count how many points the user has scored for each question.
 
 #### User Stories 
 
-* **A user's perspective:** I want to easily understand the purpose of the site.  
+* **A user's perspective:** I want to easily understand the purpose of the website.  
 * **A user's perspective:** I want the quiz to have clear instructions about how the game works. 
 * **A user's perspective:** I want the game to always provide me with information about how many questions I have played and have left, also how many points I have scored. 
 
 
-
-
 ## Logic 
+
+#### Flow Diagram 
+
+Before I started to write any code for this project I made sure to create an easy and straightforward `Flow Diagram` with all the logic for this Quiz. The `Flow Diagram` was created with the use of 
+[Lucid Chart](https://www.lucidchart.com/pages/) (link). I used the free version that is available for anyone that register an acount at their website. My `Flow Diagram` is demonstrated below. 
+
+![Screenshot of my flow diagram](/assets/images/) ADD FINAL FLOW DIAGRAM!
+
+
 
 
 ## Testing
