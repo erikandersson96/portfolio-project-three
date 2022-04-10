@@ -168,7 +168,9 @@ For this project I used Code Institutes Python template that can be found [here]
 **Steps to create a new repository in Github:**
 
 1. Sign in or sign up to [GitHub](https://github.com) (link). 
-1. When you have done that, you will see `"new"` ![Screenshot new repository button github](/assets/images/github.png) up in the left corner. 
+1. When you have done that, you will see `"new"` up in the left corner. 
+**Like this:**
+![Screenshot new repository button github](/assets/images/github.png)
 1. Select in the dropdown menu under `Repository template` if you for example would like to use the template provided by `Code Institute` that I did for this project. If you don't see it in the dropdown menu click this [link](https://github.com/Code-Institute-Org/python-essentials-template) to get to the one provided by `Code Institute` and click `Use this template` to the left of the green Gitpod button.
 1. When you have done that, give the repository a name. Leave it public if you want anyone on the internet to see your repository (I always do). 
 1. Click create repository. 
