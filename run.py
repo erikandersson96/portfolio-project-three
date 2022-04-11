@@ -8,14 +8,14 @@ import random
 import pyfiglet
 
 
-def clear(): 
+def clear():
     """
     This function adds the ability to clear the terminal to get more space 
     """
     os.system("cls" if os.name == "nt" else "clear")
 
 
-def game_start(): 
+def game_start():
     """
     Start up the game, welcome message and start up the meny with options
     """
@@ -27,13 +27,13 @@ def game_start():
     user_game_meny()
 
 
-def user_game_meny(): 
+def user_game_meny():
     """
-    Game meny with the two options of either start the quiz or watch game 
+    Game meny with the two options of either start the quiz or watch game
     rules for the quiz
-    """ 
+    """
     print("Are you ready for some Formula One questions?\n")
-    print("""Select either Start Quiz or Rules in the menu below by 
+    print("""Select either Start Quiz or Rules in the menu below by
     following the instructions underneath the meny options.""")
     print("""
     -        Start Quiz        -
@@ -43,98 +43,100 @@ def user_game_meny():
     main_meny_options()
 
 
-def main_meny_options(): 
+def main_meny_options():
     """
-    Main meny to check which option the user selected between Start Quiz 
-    or Rules 
+    Main meny to check which option the user selected between Start Quiz
+    or Rules
     """
-    try: 
-        while True: 
+    try:
+        while True:
             option = input("").upper()
-            if option not in ["S", "R"]: 
+            if option not in ["S", "R"]:
                 raise Exception
-            else: 
+            else:
                 if option == 'S':
                     main()
-                    break 
-                elif option == 'R': 
+                    break
+                elif option == 'R':
                     game_rules()
                     break
-    except Exception: 
+    except Exception:
         clear()
-        print("""Wrong...! You did not type 's or S' or 'r or R' to choose 
-        either Start Quiz or see the Rules. Please type the following to 
+        print("""Wrong...! You did not type 's or S' or 'r or R' to choose
+        either Start Quiz or see the Rules. Please type the following to
         continue: 's or S' for Start Quiz or 'r or R' to see the Rules.\n""")
         user_game_meny()
 
 
-def game_rules(): 
+def game_rules():
     """
-    To display the game rules for the user 
+    To display the game rules for the user
     """
     clear()
     print("Welcome to Game Rules!")
     print("""
-        This quiz consists of 6 or 12 questions, and the answer for each question
-        will be either one of two options that are displayed underneath.
-        You will have to Type either '1' or '2' to select the answer you
-        think is the correct one and press Enter. The quiz will countinue
-        until all questions has been played for the selected amount. Good luck!\n""")
+        This quiz consists of 6 or 12 questions, and the answer for each
+        question will be either one of two options that are displayed
+        underneath. You will have to Type either '1' or '2' to select
+        the answer you think is the correct one and press Enter.
+        The quiz will countinue until all questions has been played
+        for the selected amount of questions. Good luck!\n""")
     print("Type 'm or M' to return to the Menu.")
-    try: 
-        while True: 
+    try:
+        while True:
             back_to_menu = input("").upper()
-            if back_to_menu not in ["M"]: 
+            if back_to_menu not in ["M"]:
                 raise Exception
-            else: 
+            else:
                 clear()
-                user_game_meny() 
-    except Exception: 
+                user_game_meny()
+    except Exception:
         clear()
         print("Did you really press 'm or M'? Try again!")
         time.sleep(2)
         game_rules()
-                
+            
 
-def get_username(): 
+def get_username():
     """
-    Get the users name to make the Quiz more personal for the player 
+    Get the users name to make the Quiz more personal for the player
     """
     clear()
     print("""Before we can start the quiz for you, you need a username!\n
-    You can choose anything you want but it can't be longer then 
-    14 characters and it has to be in letters 
+    You can choose anything you want but it can't be longer then
+    14 characters and it has to be in letters
     (not numbers or special characters).\n""")
-    try: 
-        while True: 
+    try:
+        while True:
             user_name = str(input("Write your username: \n"))
-            if len(user_name) <= 14 and user_name.isalpha(): 
-                print(f"Thank you {user_name}! One step closer to start the quiz.")
-                return user_name 
-            else: 
-                print("Not longer then 14 characters, written with numbers or special characters!\n")
-    except Exception: 
+            if len(user_name) <= 14 and user_name.isalpha():
+                print(f"Thank you {user_name}!")
+                return user_name
+            else:
+                print("Not longer then 14 characters.")
+                print("Written with numbers or special characters!\n")
+    except Exception:
         get_username()
-    
+ 
 
-def how_many_questions(): 
+def how_many_questions():
     """
-    User get to choose to play either 6 or 12 questions 
+    User get to choose to play either 6 or 12 questions
     """
     print("Loading...")
     time.sleep(2)
     clear()
     print("How many questions would you like to play?")
-    while True: 
-        try: 
+    while True:
+        try:
             amount_questions = int(input("6 or 12:\n"))
-            if amount_questions not in [6, 12]: 
-                raise Exception 
-            else: 
+            if amount_questions not in [6, 12]:
+                raise Exception
+            else:
                 clear()
-                return amount_questions 
-        except Exception: 
-            print("You didn't Type in '6 or 12', please choose only one!")  
+                return amount_questions
+        except Exception:
+            print("You didn't Type in '6 or 12', please choose only one!")
 
 
 def start_random_quiz(amount_questions):
@@ -238,10 +240,10 @@ def user_choice_exit():
                 elif user_choice == 'N':
                     exit(0)
         except Exception:
-            print("""
-            You did not Type 'y or Y' for yes to play the quiz again
-            or 'n or N' for no to exit the program. You typed something else,
-            try again.""")       
+            print("")
+            print("You did not Type 'y or Y' for yes to play the quiz again")
+            print("or 'n or N' for no to exit the program.")
+            print("You typed something else, try again.\n")
 
 
 def main():
