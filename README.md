@@ -145,13 +145,13 @@ To meet the expectations in the user stories. I have tested my python project fo
 **Result**
 * By presenting the game with `"F1 QUIZ"` first and a welcome message that explains that says `"Welcome to this Formula One Quiz!"`, so the user quickly understand the purpose of this website (python project). 
 
-1. **Goal**
+2. **Goal**
 * A user's perspective: I want the quiz to have clear instructions about how the game works.
 
 **Result**
 * By always presenting instructions below each step the user takes in the game. 
 
-1. **Goal**
+3. **Goal**
 * A user's perspective: I want the game to always provide me with information about how many questions I have played and have left, also how many points I have scored.
 
 **Result**
