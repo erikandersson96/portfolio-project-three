@@ -134,29 +134,30 @@ def how_many_questions():
                 clear()
                 return amount_questions 
         except Exception: 
-            print("You didn't Type in '6 or 12', please choose only one!")   
+            print("You didn't Type in '6 or 12', please choose only one!")  
 
 
-def start_random_quiz(amount_questions): 
+def start_random_quiz(amount_questions):
     """
-    Generate a random question from formula_questions 
+    Generate random question for the user and makes sure that the questions
+    doesn't get repeated for the user
     """
     quiz_question = []
-    random.shuffle(formula_questions)
+    full_questions = formula_questions.copy()
     for question in range(amount_questions):
-        x = random.randint(0, (len(formula_questions) - 1))
-        quiz_question.append(formula_questions[x])
-    return quiz_question    
+        x = random.randint(0, (len(full_questions)-1))
+        quiz_question.append(full_questions.pop(x))
+    return quiz_question
 
 
 def user_question(quiz_question, amount_questions):
     """
-    Display the random generated question for the user 
+    Display the random generated question for the user
     """
     i = 0
-    point = 0 
+    point = 0
     question = 0
-    while i < amount_questions: 
+    while i < amount_questions:
         question += 1
         print(f"Question {question}/{amount_questions}.\n")
         print(quiz_question[i]["question"])
@@ -165,49 +166,49 @@ def user_question(quiz_question, amount_questions):
         print("")
         correct_answer = correct_answer_question(quiz_question[i])
         user_answer = user_answer_input()
-        if user_answer == correct_answer: 
-            point += 1 
+        if user_answer == correct_answer:
+            point += 1
             print("Correct! Well done. You scored 1 point!\n")
             print(f"Your current score: {point} points!\n")
-        else: 
+        else:
             print("Oh no you guessed wrong. Better luck in the next question!\n")
         time.sleep(2)
         i += 1
         clear()
-    return point 
+    return point
 
 
 def correct_answer_question(quiz_question):
     """
-    Checks for the correct answer out of the two options for each question 
-    """ 
-    if quiz_question['correct'] == quiz_question['options'][0]: 
+    Checks for the correct answer out of the two options for each question
+    """
+    if quiz_question['correct'] == quiz_question['options'][0]:
         return 1
-    elif quiz_question['correct'] == quiz_question['options'][1]: 
+    elif quiz_question['correct'] == quiz_question['options'][1]:
         return 2
 
 
-def user_answer_input(): 
+def user_answer_input():
     """
     Here it checks what the user inputted as answer between the two options and
-    if it is a valid input  
+    if it is a valid input
     """
     print("What do you think is the correct answer?")
-    while True: 
-        try: 
+    while True:
+        try:
             user_answer = input("1 or 2:\n")
             user_answer = int(user_answer)
             print("")
             print(f"Your answer is {int(user_answer)}.\n")
-            if user_answer not in [1, 2]: 
+            if user_answer not in [1, 2]:
                 raise Exception
-            else: 
+            else:
                 return user_answer
-        except Exception: 
+        except Exception:
             print("Only enter eiter '1 or 2'. You entered something else... ")
 
 
-def end_message(user_name, point): 
+def end_message(user_name, point):
     """
     End message with information about the users name and point
     """
@@ -218,7 +219,7 @@ def end_message(user_name, point):
     input("Please press enter to continue...")
 
 
-def user_choice_exit(): 
+def user_choice_exit():
     """
     Gives the user a choice when end_message is showing after all questions to 
     restart the quiz or exit the program
@@ -226,24 +227,24 @@ def user_choice_exit():
     clear()
     print("Do you want to play again?")
     print("Type Y (yes) or N (no) to exit the program.\n")
-    while True: 
-        try: 
+    while True:
+        try:
             user_choice = str(input("Y or N:\n")).upper()
             if user_choice not in ["Y", "N"]:
                 raise Exception
-            else: 
-                if user_choice == 'Y': 
-                    game_start() 
-                elif user_choice == 'N': 
+            else:
+                if user_choice == 'Y':
+                    game_start()
+                elif user_choice == 'N':
                     exit(0)
         except Exception:
             print("""
-            You did not Type 'y or Y' for yes to play the quiz again 
-            or 'n or N' for no to exit the program. You typed something else, 
-            try again.""")            
+            You did not Type 'y or Y' for yes to play the quiz again
+            or 'n or N' for no to exit the program. You typed something else,
+            try again.""")       
 
 
-def main(): 
+def main():
     """
     Main holds all function calls
     """
