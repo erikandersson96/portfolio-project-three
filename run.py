@@ -19,6 +19,7 @@ def game_start():
     """
     Start up the game, welcome message and start up the meny with options
     """
+    clear()
     print("")
     print("Hello player! Welcome to this Formula One Quiz!\n")
     f1_text = pyfiglet.figlet_format("F 1  Q U I Z", font="3-d")
@@ -120,7 +121,8 @@ def how_many_questions():
     """
     User get to choose to play either 6 or 12 questions 
     """
-    time.sleep(4)
+    print("Loading...")
+    time.sleep(2)
     clear()
     print("How many questions would you like to play?")
     while True: 
@@ -166,11 +168,11 @@ def user_question(quiz_question, amount_questions):
         user_answer = user_answer_input()
         if user_answer == correct_answer: 
             point += 1 
-            print(f"Correct! Well done. You scored 1 point!\n")
+            print("Correct! Well done. You scored 1 point!\n")
             print(f"Your current score: {point} points!\n")
         else: 
-            print(f"Oh no you guessed wrong. Better luck in the next question!\n")
-        time.sleep(4)
+            print("Oh no you guessed wrong. Better luck in the next question!\n")
+        time.sleep(2)
         i += 1
         clear()
     return point 
@@ -211,12 +213,36 @@ def end_message(user_name, point):
     End message with information about the users name and point
     """
     clear()
-    print("""
-    Well done! I hope your Formula One knowledge got a little
-    better with this quiz.\n""")
-    print(f"{user_name} you scored at total of {point} points!")
+    print("Well done! I hope your Formula One knowledge got a little")
+    print("better with this quiz.\n")
+    print(f"{user_name} you scored at total of {point} points!\n")
     input("Please press enter to continue...")
-  
+
+
+def user_choice_exit(): 
+    """
+    Gives the user a choice when end_message is showing after all questions to 
+    restart the quiz or exit the program
+    """
+    clear()
+    print("Do you want to play again?")
+    print("Type Y (yes) or N (no) to exit the program.\n")
+    while True: 
+        try: 
+            user_choice = str(input("Y or N:\n")).upper()
+            if user_choice not in ["Y", "N"]:
+                raise Exception
+            else: 
+                if user_choice == 'Y': 
+                    game_start() 
+                elif user_choice == 'N': 
+                    exit(0)
+        except Exception:
+            print("""
+            You did not Type 'y or Y' for yes to play the quiz again 
+            or 'n or N' for no to exit the program. You typed something else, 
+            try again.""")            
+
 
 def main(): 
     """
@@ -227,7 +253,7 @@ def main():
     quiz_question = start_random_quiz(amount_questions)
     point = user_question(quiz_question, amount_questions)
     end_message(user_name, point)
-    game_start()
+    user_choice_exit()
 
 
 if __name__ == "__main__":
