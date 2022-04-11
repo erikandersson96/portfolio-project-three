@@ -134,15 +134,15 @@ def how_many_questions():
                 clear()
                 return amount_questions 
         except Exception: 
-            print("You didn't Type in '6 or 12', please choose only one!")
-    
+            print("You didn't Type in '6 or 12', please choose only one!")   
+
 
 def start_random_quiz(amount_questions): 
     """
     Generate a random question from formula_questions 
     """
     quiz_question = []
-    random.shuffle(quiz_question)
+    random.shuffle(formula_questions)
     for question in range(amount_questions):
         x = random.randint(0, (len(formula_questions) - 1))
         quiz_question.append(formula_questions[x])
