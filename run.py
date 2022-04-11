@@ -175,7 +175,8 @@ def user_question(quiz_question, amount_questions):
             print("Correct! Well done. You scored 1 point!\n")
             print(f"Your current score: {point} points!\n")
         else:
-            print("Oh no you guessed wrong. Better luck in the next question!\n")
+            print("Oh no you guessed wrong.")
+            print("Better luck in the next question!\n")
         time.sleep(2)
         i += 1
         clear()
@@ -225,7 +226,7 @@ def end_message(user_name, point):
 
 def user_choice_exit():
     """
-    Gives the user a choice when end_message is showing after all questions to 
+    Gives the user a choice when end_message is showing after all questions to
     restart the quiz or exit the program
     """
     clear()
