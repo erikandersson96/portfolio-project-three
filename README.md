@@ -139,22 +139,19 @@ But the end message does not show up at all, the Quiz just goes back to the the 
 
 To meet the expectations in the user stories. I have tested my python project for each of them.
 
----
-**Goal** 
+1. **Goal** 
 * A user's perspective: I want to easily understand the purpose of the website. 
 
 **Result**
 * By presenting the game with `"F1 QUIZ"` first and a welcome message that explains that says `"Welcome to this Formula One Quiz!"`, so the user quickly understand the purpose of this website (python project). 
 
----
-**Goal**
+1. **Goal**
 * A user's perspective: I want the quiz to have clear instructions about how the game works.
 
 **Result**
 * By always presenting instructions below each step the user takes in the game. 
 
----
-**Goal**
+1. **Goal**
 * A user's perspective: I want the game to always provide me with information about how many questions I have played and have left, also how many points I have scored.
 
 **Result**
