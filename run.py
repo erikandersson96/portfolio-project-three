@@ -141,13 +141,12 @@ def start_random_quiz(amount_questions):
     """
     Generate a random question from formula_questions 
     """
-    previous_question = []
     quiz_question = []
+    random.shuffle(quiz_question)
     for question in range(amount_questions):
-        x = random.randint(0, (len(formula_questions) - 1)) 
+        x = random.randint(0, (len(formula_questions) - 1))
         quiz_question.append(formula_questions[x])
-    return quiz_question 
-    
+    return quiz_question    
 
 
 def user_question(quiz_question, amount_questions):
