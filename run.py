@@ -95,7 +95,7 @@ def game_rules():
         print("Did you really press 'm or M'? Try again!")
         time.sleep(2)
         game_rules()
-            
+
 
 def get_username():
     """

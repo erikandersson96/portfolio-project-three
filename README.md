@@ -135,6 +135,31 @@ But the end message does not show up at all, the Quiz just goes back to the the 
 ### Validation
 
 
+### User Story Testing 
+
+To meet the expectations in the user stories. I have tested my python project for each of them.
+
+---
+**Goal** 
+* A user's perspective: I want to easily understand the purpose of the website. 
+
+**Result**
+* By presenting the game with `"F1 QUIZ"` first and a welcome message that explains that says `"Welcome to this Formula One Quiz!"`, so the user quickly understand the purpose of this website (python project). 
+
+---
+**Goal**
+* A user's perspective: I want the quiz to have clear instructions about how the game works.
+
+**Result**
+* By always presenting instructions below each step the user takes in the game. 
+
+---
+**Goal**
+* A user's perspective: I want the game to always provide me with information about how many questions I have played and have left, also how many points I have scored.
+
+**Result**
+* By adding the functionality to see which question of the selected amount the user is on right above each question. When the user has answered a question and if the user is correct the total points scored will be displayed underneath, but also when the game is finished. 
+
 ## Python Libraries 
 
 **Python libraries used for this project:** 
