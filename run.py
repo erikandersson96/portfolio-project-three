@@ -21,7 +21,7 @@ def game_start():
     """
     print("")
     print("Hello player! Welcome to this Formula One Quiz!\n")
-    f1_text = pyfiglet.figlet_format("F 1  Q U I Z", font = "3-d")
+    f1_text = pyfiglet.figlet_format("F 1  Q U I Z", font="3-d")
     print(f1_text)
     user_game_meny()
 
@@ -32,7 +32,7 @@ def user_game_meny():
     rules for the quiz
     """ 
     print("Are you ready for some Formula One questions?\n")
-    print("""Select either Start Quiz or Rules in the meny below by  
+    print("""Select either Start Quiz or Rules in the menu below by 
     following the instructions underneath the meny options.""")
     print("""
     -        Start Quiz        -
@@ -49,8 +49,7 @@ def main_meny_options():
     """
     try: 
         while True: 
-            option = input("")
-            option = option.upper()
+            option = input("").upper()
             if option not in ["S", "R"]: 
                 raise Exception
             else: 
@@ -67,7 +66,6 @@ def main_meny_options():
         continue: 's or S' for Start Quiz or 'r or R' to see the Rules.\n""")
         user_game_meny()
 
-# game_rules() won't accept "m" as a valid option to get back to the menu...?
 
 def game_rules(): 
     """
@@ -84,14 +82,12 @@ def game_rules():
     print("Type 'm or M' to return to the Menu.")
     try: 
         while True: 
-            back_to_menu = input("")
-            back_to_menu = back_to_menu.upper()
+            back_to_menu = input("").upper()
             if back_to_menu not in ["M"]: 
                 raise Exception
             else: 
-                if back_to_menu == 'M':
-                    main_meny_options() 
-                    break
+                clear()
+                user_game_meny() 
     except Exception: 
         clear()
         print("Did you really press 'm or M'? Try again!")
@@ -120,7 +116,6 @@ def get_username():
         get_username()
     
 
-
 def how_many_questions(): 
     """
     User get to choose to play either 6 or 12 questions 
@@ -140,18 +135,15 @@ def how_many_questions():
             print("You didn't Type in '6 or 12', please choose only one!")
     
 
-
 def start_random_quiz(amount_questions): 
     """
     Generate a random question from formula_questions 
     """
     previous_question = []
     quiz_question = []
-    while len(quiz_question) < amount_questions: 
-        x = random.randint(0, (len(formula_questions) - 1))
-        if x not in previous_question: 
-            previous_question.append(x)
-            quiz_question.append(formula_questions[x])
+    for question in range(amount_questions):
+        x = random.randint(0, (len(formula_questions) - 1)) 
+        quiz_question.append(formula_questions[x])
     return quiz_question 
     
 
@@ -163,7 +155,7 @@ def user_question(quiz_question, amount_questions):
     i = 0
     point = 0 
     question = 0
-    while i < 12: 
+    while i < amount_questions: 
         question += 1
         print(f"Question {question}/{amount_questions}.\n")
         print(quiz_question[i]["question"])
@@ -174,12 +166,13 @@ def user_question(quiz_question, amount_questions):
         user_answer = user_answer_input()
         if user_answer == correct_answer: 
             point += 1 
-            print(f"Correct! Well done. You scored {point} points!\n")
+            print(f"Correct! Well done. You scored 1 point!\n")
+            print(f"Your current score: {point} points!\n")
         else: 
             print(f"Oh no you guessed wrong. Better luck in the next question!\n")
         time.sleep(4)
-        i = i + 1
-        clear() 
+        i += 1
+        clear()
     return point 
 
 
@@ -192,9 +185,6 @@ def correct_answer_question(quiz_question):
     elif quiz_question['correct'] == quiz_question['options'][1]: 
         return 2
 
-
-# user_answer_input(). If i type the wrong character instead of 1 or 2 it shows the exception 
-# but when I try to do it correct (1 or 2) it doesn't take it as a valid input before second try?
 
 def user_answer_input(): 
     """
@@ -214,10 +204,7 @@ def user_answer_input():
                 return user_answer
         except Exception: 
             print("Only enter eiter '1 or 2'. You entered something else... ")
-            user_answer_input()
 
-
-# end_message() won't show up at all after all the selected questions are finished, why?
 
 def end_message(user_name, point): 
     """
@@ -228,9 +215,8 @@ def end_message(user_name, point):
     Well done! I hope your Formula One knowledge got a little
     better with this quiz.\n""")
     print(f"{user_name} you scored at total of {point} points!")
-    time.sleep(10)
-    
-
+    input("Please press enter to continue...")
+  
 
 def main(): 
     """
@@ -244,5 +230,5 @@ def main():
     game_start()
 
 
-
-game_start()
+if __name__ == "__main__":
+    game_start()
