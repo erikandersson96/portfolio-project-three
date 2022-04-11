@@ -175,8 +175,9 @@ def user_question(quiz_question, amount_questions):
             print("Correct! Well done. You scored 1 point!\n")
             print(f"Your current score: {point} points!\n")
         else:
-            print("Oh no you guessed wrong.")
+            print("Oh no you guessed wrong. 0 points for this question.")
             print("Better luck in the next question!\n")
+            print(f"You have: {point} points this far!\n")
         time.sleep(2)
         i += 1
         clear()
