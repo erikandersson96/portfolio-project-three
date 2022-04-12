@@ -24,17 +24,17 @@ def game_start():
     print("Hello player! Welcome to this Formula One Quiz!\n")
     f1_text = pyfiglet.figlet_format("F 1  Q U I Z", font="3-d")
     print(f1_text)
-    user_game_meny()
+    user_game_menu()
 
 
-def user_game_meny():
+def user_game_menu():
     """
     Game meny with the two options of either start the quiz or watch game
     rules for the quiz
     """
     print("Are you ready for some Formula One questions?\n")
-    print("""Select either Start Quiz or Rules in the menu below by
-    following the instructions underneath the meny options.""")
+    print("Select either Start Quiz or Rules in the menu below by")
+    print("following the instructions underneath the menu options.")
     print("""
     -        Start Quiz        -
     -           Rules          -\n""")
@@ -65,7 +65,7 @@ def main_meny_options():
         print("""Wrong...! You did not type 's or S' or 'r or R' to choose
         either Start Quiz or see the Rules. Please type the following to
         continue: 's or S' for Start Quiz or 'r or R' to see the Rules.\n""")
-        user_game_meny()
+        user_game_menu()
 
 
 def game_rules():
@@ -89,7 +89,7 @@ def game_rules():
                 raise Exception
             else:
                 clear()
-                user_game_meny()
+                user_game_menu()
     except Exception:
         clear()
         print("Did you really press 'm or M'? Try again!")
