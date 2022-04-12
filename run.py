@@ -58,10 +58,10 @@ def user_game_menu():
     print("Instructions:")
     print("Type 's or S' to Start the Quiz, Type 'l or L' to see the")
     print("Leaderboard, Type 'r or R' to see the Game Rules.")
-    main_meny_options()
+    main_menu_options()
 
 
-def main_meny_options():
+def main_menu_options():
     """
     Main meny to check which option the user selected between Start Quiz
     or Rules
