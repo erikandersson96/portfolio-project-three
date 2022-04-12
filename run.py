@@ -53,9 +53,11 @@ def user_game_menu():
     print("following the instructions underneath the menu options.")
     print("""
     -        Start Quiz        -
-    -           Rules          -\n""")
+    -        Leaderboard       -
+    -        Game Rules        -\n""")
     print("Instructions:")
-    print("Type 's or S' to start the quiz, type 'r or R' to see the Rules.")
+    print("Type 's or S' to Start the Quiz, Type 'l or L' to see the")
+    print("Leaderboard, Type 'r or R' to see the Game Rules.")
     main_meny_options()
 
 
@@ -67,11 +69,14 @@ def main_meny_options():
     try:
         while True:
             option = input("").upper()
-            if option not in ["S", "R"]:
+            if option not in ["S", "L", "R"]:
                 raise Exception
             else:
                 if option == 'S':
                     main()
+                    break
+                elif option == 'L':
+                    leaderboard()
                     break
                 elif option == 'R':
                     game_rules()
@@ -113,17 +118,47 @@ def game_rules():
         game_rules()
 
 
-def user_to_leaderboard(amount_questions, user_name, point):
+def leaderboard():
     """
-    This function adds all data about username, total points to the correct
-    game mode, either 6 or 12 questions
+    Displays leaderboard to the user
     """
-    if amount_questions == 6: 
-        user_point_six = SHEET.worksheet('questions-6')
-        user_point_six.append_row([user_name, point])
-    elif amount_questions == 12: 
-        user_point_twelve = SHEET.worksheet('questions-12')
-        user_point_twelve.append_row([user_name, point])
+    clear()
+    print("Loading...")
+    time.sleep(2)
+    clear()
+    print("******* Leaderboard *******")
+    print("")
+    leader_six = get_score_from_sheet(6, 1)
+    second_place_six = get_score_from_sheet(6, 2)
+    third_place_six = get_score_from_sheet(6, 3)
+    leader_twelve = get_score_from_sheet(12, 1)
+    second_place_twelve = get_score_from_sheet(12, 2)
+    third_place_twelve = get_score_from_sheet(12, 3)
+    print("6 Questions:")
+    print("1." + leader_six[0] + leader_six[1])
+    print("2." + second_place_six[0] + second_place_six[1])
+    print("3." + third_place_six[0] + third_place_six[1])
+    print("")
+    print("12 Questions:")
+    print("1." + leader_twelve[0] + leader_twelve[1])
+    print("2." + second_place_twelve[0] + second_place_twelve[1])
+    print("3." + third_place_twelve[0] + third_place_twelve[1])
+    print("")
+    print("")
+    print("Return to menu, Type 'm or M'")
+    try:
+        while True:
+            back_to_menu = input("").upper()
+            if back_to_menu not in ["M"]:
+                raise Exception
+            else:
+                clear()
+                user_game_menu()
+    except Exception:
+        clear()
+        print("Did you really press 'm or M'? Try again!")
+        time.sleep(1)
+        leaderboard()
 
 
 def get_username():
@@ -147,7 +182,7 @@ def get_username():
                 print("Written with numbers or special characters!\n")
     except Exception:
         get_username()
- 
+
 
 def how_many_questions():
     """
@@ -168,6 +203,27 @@ def how_many_questions():
                 return amount_questions
         except Exception:
             print("You didn't Type in '6 or 12', please choose only one!")
+
+
+def get_score_from_sheet(which_quiz, position):
+    """
+    Get all data from both worksheets 6 and 12 to organize them in order
+    from top to bottom
+    """
+    if which_quiz == 6:
+        googlesheet = SHEET.worksheet('questions-6')
+    elif which_quiz == 12:
+        googlesheet = SHEET.worksheet('questions-12')
+    googlesheet_values = googlesheet.get_all_values()
+    score = googlesheet_values
+    score_length = len(score)
+    for x in range(0, score_length):
+        for i in range(0, score_length-x-1):
+            if int(score[i][1]) > int(score[i + 1][1]):
+                player = score[i]
+                score[i] = score[i + 1]
+                score[i + 1] = player
+    return score[score_length - (position)]
 
 
 def start_random_quiz(amount_questions):
@@ -241,6 +297,19 @@ def user_answer_input():
                 return user_answer
         except Exception:
             print("Only enter eiter '1 or 2'. You entered something else... ")
+
+
+def user_to_leaderboard(amount_questions, user_name, point):
+    """
+    This function adds all data about username, total points to the correct
+    game mode, either 6 or 12 questions
+    """
+    if amount_questions == 6:
+        user_point_six = SHEET.worksheet('questions-6')
+        user_point_six.append_row([user_name, point])
+    elif amount_questions == 12:
+        user_point_twelve = SHEET.worksheet('questions-12')
+        user_point_twelve.append_row([user_name, point])
 
 
 def end_message(user_name, point):
