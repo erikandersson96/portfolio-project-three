@@ -11,6 +11,7 @@ To play the quiz you can click this [link](link).
 ![Screenshot of Welcome message Formula One Quiz](/assets/images/welcome.png)
 
 
+---
 ## Portfolio Project Three 
 
 ### Intention 
@@ -51,6 +52,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 * [Support](#support) 
 
 
+---
 ## UX 
 
 #### Strategy 
@@ -73,6 +75,7 @@ and count how many points the user has scored for each question.
 * **A user's perspective:** I want the game to always provide me with information about how many questions I have played and have left, also how many points I have scored. 
 
 
+---
 ## Logic 
 
 #### Flow Diagram 
@@ -83,8 +86,7 @@ Before I started to write any code for this project I made sure to create an eas
 ![Screenshot of my flow diagram](/assets/images/) ADD FINAL FLOW DIAGRAM!
 
 
-
-
+---
 ## Testing
 
 ### Manual Testing 
@@ -163,9 +165,12 @@ To meet the expectations in the user stories. I have tested my python project fo
 This Formula One Quiz was created with the intention to test peoples knowledge in the sport. A game that people can share among their friends and family to challenge each other's knowledge. 
 * **Pyfiglet:** I choose to import [pyfiglet](https://pypi.org/project/pyfiglet/0.7/) (link) so I could display `"F1 QUIZ"` in a 3d look without the need to create it myself. Take a look at their website to get all of the instructions to how you can implement it your self to your next python project. 
 
+
+---
 ## Credits
 
 
+---
 ## Deployment 
 
 **GitHub:**
@@ -178,7 +183,7 @@ I frequently used `commit` throughout the whole project, this is the commands us
 
 This is all done to prevent any `data` loss in case Gitpod crashes.
 
----
+
 #### GitHub & Gitpod 
 
 For this project I used Code Institutes Python template that can be found [here](https://github.com/Code-Institute-Org/python-essentials-template) (link). 
@@ -221,6 +226,7 @@ Cloning a repository inolves making a full copy of a repository on your local ma
 This instructions were taken from [Github - cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 
+---
 ## Support 
 
 I would like to give an extra `Thank you` to all the kind people I have around me that gave me support in all different ways. 
