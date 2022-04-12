@@ -113,6 +113,19 @@ def game_rules():
         game_rules()
 
 
+def user_to_leaderboard(amount_questions, user_name, point):
+    """
+    This function adds all data about username, total points to the correct
+    game mode, either 6 or 12 questions
+    """
+    if amount_questions == 6: 
+        user_point_six = SHEET.worksheet('questions-6')
+        user_point_six.append_row([user_name, point])
+    elif amount_questions == 12: 
+        user_point_twelve = SHEET.worksheet('questions-12')
+        user_point_twelve.append_row([user_name, point])
+
+
 def get_username():
     """
     Get the users name to make the Quiz more personal for the player
@@ -275,6 +288,7 @@ def main():
     quiz_question = start_random_quiz(amount_questions)
     point = user_question(quiz_question, amount_questions)
     end_message(user_name, point)
+    user_to_leaderboard(amount_questions, user_name, point)
     user_choice_exit()
 
 
