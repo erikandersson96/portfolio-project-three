@@ -89,7 +89,7 @@ Before I started to write any code for this project I made sure to create an eas
 
 ### Manual Testing 
 
-#### Bugs & solutions
+#### Bugs that are fixed
 
 * **Bug 1:** 
 Write wrong character option when user answer a question. 
@@ -102,7 +102,6 @@ issue and won't let the user input the valid value to countinue the quiz.
 
 ![Screenshot bug 1](/assets/images/bug1.png) 
 
-**Bug 1 Solution:**
 
 * **Bug 2:** 
 When exit the game Rules. 
@@ -116,7 +115,6 @@ command. So the program gets quite confusing for the user when this bug happens.
 
 ![Screenshot bug 1](/assets/images/bug2.png)
 
-**Bug 2 solution:** 
 
 * **Bug 3:**
 End message doesn't show up. 
@@ -128,8 +126,6 @@ But the end message does not show up at all, the Quiz just goes back to the the 
 **Screenshot:**
 
 ![Screenshot bug 1](/assets/images/bug2.png)
-
-**Solution:**
 
 
 ### Validation
