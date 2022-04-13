@@ -98,7 +98,7 @@ Before I started to write any code for this project I made sure to create an eas
 ---
 ## Existing Features
 
-#### Start Screen 
+### Start Screen 
 
 When the program starts the user will get a `Welcome message` including a `"Banner"` and a menu of three different options `Start Quiz | Leaderboard | Game Rules`. Underneath the menu the user can find the instructions about how to select the different options from the menu. See the screenshot below:
 
@@ -108,7 +108,7 @@ If the user doesn't care to follow the instructions or accidentally types the wr
 
 ![Screenshot of error message wrong input start screen](/assets/images/welcome-wrong.png)
 
-#### Leaderboard & Game Rules
+### Leaderboard & Game Rules
 
 When the user selects the `Leaderboard` option he or she will see a leaderboard containing the top 3 finishers of the two different question selections either 6 or 12. When the user want's to exit the leaderboard an get back to the menu there is instructions below that explains this. See the screenshot below:
 
@@ -122,7 +122,7 @@ When the user want to exit the `Leaderboard or Game Rules` to get back to the me
 
 ![Screenshot of exit leaderboard or game rules](/assets/images/rules-wrong.png)
 
-#### Username 
+### Username 
 
 When the user selects `Start Quiz` to start the quiz a message will appear that says that the user needs to fill in a username, some instructions underneath the first message will inform the user that the username can't be any longer then 10 characters, it can't inculde numbers or special characters. See the screenshot below:
 
@@ -136,7 +136,7 @@ When the user types in his or her username and accidentally types anything else 
 
 ![Screenshot of error when type in username](/assets/images/username-wrong.png)
 
-#### Question Selection 
+### Question Selection 
 
 After the user has selected a valid `username` he or she wiill be asked how many questions to play either `6 or 12`. See the screenshot below:
 
@@ -146,7 +146,7 @@ If the user types an invalid number or character not `6 or 12` a message will ap
 
 ![Screenshot of error message question selection](/assets/images/amount-wrong.png)
 
-#### Questions 
+### Questions 
 
 The `questions` in the Quiz will be displayed to the user right after that the user has selected a valid input between `6 or 12` for the question selection, the user can choose between two options for each question, but only one is the correct answer. See the screenshot below:
 
@@ -164,13 +164,13 @@ When the user `answers` the question he or she can only input either `1 or 2` as
 
 ![Screenshot of error message question](/assets/images/question-wrong.png)
 
-#### End Message
+### End Message
 
 When the user has `completed` all questions of the selected amount `6 or 12 questions` a result message will appear to inform the user about how many points he or she got. The user will see underneath `Please press enter to continue...`. See the screenshot below:
 
 ![Screenshot of end message](/assets/images/end-message.png)
 
-#### Play Again 
+### Play Again 
 
 When the user has pressed enter a message will appear with a question to the user that ask the user if he or she wants to play again or quit the quiz. If the user choose to play again 
 `Y (yes)` he or she will be directed back to the menu, if the user choose `N (no)` the quiz will exit. See the screenshot below:
