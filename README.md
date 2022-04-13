@@ -283,10 +283,10 @@ I frequently used `commit` throughout the whole project, this is the commands us
 * `git commit -m “commit message here..”` (This is used to label the commit changes made to the local repository).
 * `git push` (This command is used to push all changes to the Github repository). 
 
-This is all done to prevent any `data` loss in case Gitpod crashes.
+This is all done to prevent any `data` loss in case Gitpod crashes and saves the `data` to GitHub. 
 
 
-#### GitHub & Gitpod 
+### GitHub & Gitpod 
 
 For this project I used Code Institutes Python template that can be found [here](https://github.com/Code-Institute-Org/python-essentials-template) (link). 
 
@@ -301,7 +301,7 @@ For this project I used Code Institutes Python template that can be found [here]
 1. Click create repository. 
 1. **Remember** to use the `commit` commands that I explained above so your hard work doesn't get lost if anything happens to Gitpod. 
 
-#### Forking GitHub Repository
+### Forking GitHub Repository
 
 Forking a Github repository is the process of making a copy of someone else repository and add your own changes to it without changing the original, the original repository is known 
 as "upstream repository". I will explain the process of forking down below: 
@@ -313,7 +313,7 @@ as "upstream repository". I will explain the process of forking down below:
 
 This instructions were taken from [Github - Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
 
-#### Cloning GitHub Repository
+### Cloning GitHub Repository
 
 Cloning a repository inolves making a full copy of a repository on your local machine. This allows you to work on the code easier. Changes can be pushed back up to the Github site or changes from other sources pulled to your local copy. I will explain how to clone down below: 
 
