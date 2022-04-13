@@ -2,13 +2,12 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 from questions import formula_questions
-import os 
-import time 
-import random 
+import os
+import time
+import random
 import pyfiglet
 import gspread
-from google.oauth2.service_account import Credentials 
-
+from google.oauth2.service_account import Credentials
 
 
 SCOPE = [
@@ -26,7 +25,7 @@ SHEET = GSPREAD_CLIENT.open('formula_one_quiz')
 
 def clear():
     """
-    This function adds the ability to clear the terminal to get more space 
+    This function adds the ability to clear the terminal to get more space
     """
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -70,7 +69,7 @@ def main_menu_options():
         while True:
             option = input("").upper()
             if option not in ["S", "L", "R"]:
-                raise Exception
+                raise ValueError
             else:
                 if option == 'S':
                     main()
@@ -81,7 +80,7 @@ def main_menu_options():
                 elif option == 'R':
                     game_rules()
                     break
-    except Exception:
+    except ValueError:
         clear()
         print("""Wrong...! You did not type 's or S' or 'r or R' to choose
         either Start Quiz or see the Rules. Please type the following to
@@ -107,11 +106,11 @@ def game_rules():
         while True:
             back_to_menu = input("").upper()
             if back_to_menu not in ["M"]:
-                raise Exception
+                raise ValueError
             else:
                 clear()
                 user_game_menu()
-    except Exception:
+    except ValueError:
         clear()
         print("Did you really press 'm or M'? Try again!")
         time.sleep(2)
@@ -150,11 +149,11 @@ def leaderboard():
         while True:
             back_to_menu = input("").upper()
             if back_to_menu not in ["M"]:
-                raise Exception
+                raise ValueError
             else:
                 clear()
                 user_game_menu()
-    except Exception:
+    except ValueError:
         clear()
         print("Did you really press 'm or M'? Try again!")
         time.sleep(1)
@@ -180,7 +179,7 @@ def get_username():
             else:
                 print("Not longer then 14 characters.")
                 print("Written with numbers or special characters!\n")
-    except Exception:
+    except ValueError:
         get_username()
 
 
@@ -189,7 +188,7 @@ def how_many_questions():
     User get to choose to play either 6 or 12 questions
     """
     print("")
-    print("Loading game...")
+    print("Loading quiz...")
     time.sleep(2.5)
     clear()
     print("How many questions would you like to play?")
@@ -197,11 +196,11 @@ def how_many_questions():
         try:
             amount_questions = int(input("6 or 12:\n"))
             if amount_questions not in [6, 12]:
-                raise Exception
+                raise ValueError
             else:
                 clear()
                 return amount_questions
-        except Exception:
+        except ValueError:
             print("You didn't Type in '6 or 12', please choose only one!")
 
 
@@ -263,7 +262,7 @@ def user_question(quiz_question, amount_questions):
             print("Oh no you guessed wrong. 0 points for this question.")
             print("Better luck in the next question!\n")
             print(f"You have: {point} points this far!\n")
-        time.sleep(2)
+        time.sleep(1)
         i += 1
         clear()
     return point
@@ -292,10 +291,10 @@ def user_answer_input():
             print("")
             print(f"Your answer is {int(user_answer)}.\n")
             if user_answer not in [1, 2]:
-                raise Exception
+                raise ValueError
             else:
                 return user_answer
-        except Exception:
+        except ValueError:
             print("Only enter eiter '1 or 2'. You entered something else... ")
 
 
@@ -335,13 +334,13 @@ def user_choice_exit():
         try:
             user_choice = str(input("Y or N:\n")).upper()
             if user_choice not in ["Y", "N"]:
-                raise Exception
+                raise ValueError
             else:
                 if user_choice == 'Y':
                     game_start()
                 elif user_choice == 'N':
                     exit(0)
-        except Exception:
+        except ValueError:
             print("")
             print("You did not Type 'y or Y' for yes to play the quiz again")
             print("or 'n or N' for no to exit the program.")
