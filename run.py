@@ -167,18 +167,20 @@ def get_username():
     clear()
     print("""Before we can start the quiz for you, you need a username!\n
     You can choose anything you want but it can't be longer then
-    14 characters and it has to be in letters
+    10 characters and it has to be in letters
     (not numbers or special characters).\n""")
     try:
         while True:
             user_name = str(input("Write your username: \n"))
-            if len(user_name) <= 14 and user_name.isalpha():
+            if len(user_name) <= 10 and user_name.isalpha():
                 print("")
                 print(f"Thank you {user_name}!")
                 return user_name
             else:
-                print("Not longer then 14 characters.")
-                print("Written with numbers or special characters!\n")
+                print("")
+                print("Not longer then 10 characters.")
+                print("Written with numbers or special characters.")
+                print("Try again!\n")
     except ValueError:
         get_username()
 
