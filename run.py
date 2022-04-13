@@ -127,12 +127,12 @@ def leaderboard():
     clear()
     print("******* Leaderboard *******")
     print("")
-    leader_six = get_score_from_sheet(6, 1)
-    second_place_six = get_score_from_sheet(6, 2)
-    third_place_six = get_score_from_sheet(6, 3)
-    leader_twelve = get_score_from_sheet(12, 1)
-    second_place_twelve = get_score_from_sheet(12, 2)
-    third_place_twelve = get_score_from_sheet(12, 3)
+    leader_six = get_score_from_sheet(6)
+    second_place_six = get_score_from_sheet(6)
+    third_place_six = get_score_from_sheet(6)
+    leader_twelve = get_score_from_sheet(12)
+    second_place_twelve = get_score_from_sheet(12)
+    third_place_twelve = get_score_from_sheet(12)
     print("6 Questions:\n")
     print("Name" + " " * 4 + "Points\n")
     print(leader_six[0])
@@ -209,7 +209,7 @@ def how_many_questions():
             print("You didn't Type in '6 or 12'! Please choose only one.")
 
 
-def get_score_from_sheet(which_quiz, position):
+def get_score_from_sheet(which_quiz):
     """
     Get all data from both worksheets 6 and 12 to organize them in order
     from top to bottom
@@ -219,6 +219,8 @@ def get_score_from_sheet(which_quiz, position):
     elif which_quiz == 12:
         googlesheet = SHEET.worksheet('questions-12')
     googlesheet_values = googlesheet.get_all_values()
+    return googlesheet_values
+    """
     score = googlesheet_values
     score_length = len(score)
     for x in range(0, score_length):
@@ -228,6 +230,7 @@ def get_score_from_sheet(which_quiz, position):
                 score[i] = score[i + 1]
                 score[i + 1] = player
     return score[score_length - (position)]
+    """
 
 
 def start_random_quiz(amount_questions):

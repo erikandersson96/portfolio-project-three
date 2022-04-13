@@ -38,6 +38,16 @@ The main goal of this project was to test my new knowledge in Python. I decided 
   * [Flow Diagram](#flow-diagram) 
   * [Comparison](#comparison) 
 
+* [Existing Features](#existing-features)
+  * [Start Screen]()
+  * [Leaderboard]()
+  * [Game Rules]()
+  * [Username]()
+  * [Question Selection]()
+  * [Questions]()
+  * [End Message]()
+  * [Play Again]()
+
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
     * [Bugs & Solutions](#bugs--solutions)
@@ -84,6 +94,93 @@ Before I started to write any code for this project I made sure to create an eas
 [Lucid Chart](https://www.lucidchart.com/pages/) (link). I used the free version that is available for anyone that register an acount at their website. My `Flow Diagram` is demonstrated below. 
 
 ![Screenshot of my flow diagram](/assets/images/) ADD FINAL FLOW DIAGRAM!
+
+
+---
+## Existing Features
+
+#### Start Screen 
+
+When the program starts the user will get a `Welcome message` including a `"Banner"` and a menu of three different options `Start Quiz | Leaderboard | Game Rules`. Underneath the menu the user can find the instructions about how to select the different options from the menu. See the screenshot below:
+
+![Screenshot of start screen](/assets/images/welcome.png)
+
+If the user doesn't care to follow the instructions or accidentally types the wrong character instead a message will appear to inform the user that he or she has to try again with a valid input. See the screenshot below:  
+
+![Screenshot of error message wrong input start screen](/assets/images/welcome-wrong.png)
+
+#### Leaderboard & Game Rules
+
+When the user selects the `Leaderboard` option he or she will see a leaderboard containing the top 3 finishers of the two different question selections either 6 or 12. When the user want's to exit the leaderboard an get back to the menu there is instructions below that explains this. See the screenshot below:
+
+![Screenshot of leaderboard](/assets/images/)
+
+When the user selects the `Game Rules` option he or she will first get a message that welcomes the user to the Game Rules, after that all of the Game Rules will be displayed. When the user want to exit the Game Rules and get back to the menu there is instructions below that explains this. See the screenshot below:
+
+![Screenshot of Game Rules](/assets/images/rules.png)
+
+When the user want to exit the `Leaderboard or Game Rules` to get back to the menu and accidentally types the wrong character instead of `m or M` a message will appear to inform the user that he or she has to try again with a valid input. See the screenshot below:
+
+![Screenshot of exit leaderboard or game rules](/assets/images/rules-wrong.png)
+
+#### Username 
+
+When the user selects `Start Quiz` to start the quiz a message will appear that says that the user needs to fill in a username, some instructions underneath the first message will inform the user that the username can't be any longer then 10 characters, it can't inculde numbers or special characters. See the screenshot below:
+
+![Screenshot of type in username](/assets/images/username.png)
+
+If the user selected a `valid username` this message will appear: 
+
+![Screenshot of type in username](/assets/images/username-correct.png)
+
+When the user types in his or her username and accidentally types anything else then alphabetics a message will appear to inform the user that he or she has to try again with a valid input. See the screenshot below:
+
+![Screenshot of error when type in username](/assets/images/username-wrong.png)
+
+#### Question Selection 
+
+After the user has selected a valid `username` he or she wiill be asked how many questions to play either `6 or 12`. See the screenshot below:
+
+![Screenshot of question selection](/assets/images/amount-questions.png)
+
+If the user types an invalid number or character not `6 or 12` a message will appear with instructions of how to continue. See the screenshot below:
+
+![Screenshot of error message question selection](/assets/images/amount-wrong.png)
+
+#### Questions 
+
+The `questions` in the Quiz will be displayed to the user right after that the user has selected a valid input between `6 or 12` for the question selection, the user can choose between two options for each question, but only one is the correct answer. See the screenshot below:
+
+![Screenshot of question](/assets/images/question.png)
+
+If the user inputs the correct answer of `either 1 or 2` this message will appear. See the screenshot below:
+
+![Screenshot of correct answer for question](/assets/images/answer-correct.png) 
+
+If the user inputs the wrong answer of `either 1 or 2` this message will appear. See the screenshot below:
+
+![Screenshot of wrong answer for question](/assets/images/answer-wrong.png)
+
+When the user `answers` the question he or she can only input either `1 or 2` as a valid answer for the question, if the user inputs anything else then one of these a message will appear with instructions of how to continue. See the screenshot below:
+
+![Screenshot of error message question](/assets/images/question-wrong.png)
+
+#### End Message
+
+When the user has `completed` all questions of the selected amount `6 or 12 questions` a result message will appear to inform the user about how many points he or she got. The user will see underneath `Please press enter to continue...`. See the screenshot below:
+
+![Screenshot of end message](/assets/images/end-message.png)
+
+#### Play Again 
+
+When the user has pressed enter a message will appear with a question to the user that ask the user if he or she wants to play again or quit the quiz. If the user choose to play again 
+`Y (yes)` he or she will be directed back to the menu, if the user choose `N (no)` the quiz will exit. See the screenshot below:
+
+![Screenshot of play again, yes or no](/assets/images/play-again.png)
+
+If the user input something else then `Y or N` a message will appear to inform the user that he or she needs to try again with a valid option. See the screenshot below:
+
+![Screenshot of error message play again, yes or no](/assets/images/play-again-error.png)
 
 
 ---
