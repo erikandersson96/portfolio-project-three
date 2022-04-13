@@ -264,6 +264,12 @@ This Formula One Quiz was created with the intention to test peoples knowledge i
 ---
 ## Credits
 
+#### Code 
+
+My mentor [Benjamin Kavanagh](https://github.com/BAK2K3) suggested me to use [pyfiglet](https://pypi.org/project/pyfiglet/0.7/) (link) instead of trying to create my own figlet in the 
+`Start Screen` that says `F1 QUIZ`. 
+
+![Screenshot of pyfiglet](/assets/images/pyfiglet.png)
 
 ---
 ## Deployment 
