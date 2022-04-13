@@ -39,14 +39,13 @@ The main goal of this project was to test my new knowledge in Python. I decided 
   * [Comparison](#comparison) 
 
 * [Existing Features](#existing-features)
-  * [Start Screen]()
-  * [Leaderboard]()
-  * [Game Rules]()
-  * [Username]()
-  * [Question Selection]()
-  * [Questions]()
-  * [End Message]()
-  * [Play Again]()
+  * [Start Screen](#start-screen)
+  * [Leaderboard & Game Rules](#leaderboard--game-rules)
+  * [Username](#username)
+  * [Question Selection](#question-selection)
+  * [Questions](#questions)
+  * [End Message](#end-message)
+  * [Play Again](#play-again)
 
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
@@ -212,7 +211,7 @@ command. So the program gets quite confusing for the user when this bug happens.
 
 **Screenshot:** 
 
-![Screenshot bug 1](/assets/images/bug2.png)
+![Screenshot bug 2](/assets/images/bug2.png)
 
 
 * **Bug 3:**
@@ -224,7 +223,7 @@ But the end message does not show up at all, the Quiz just goes back to the the 
 
 **Screenshot:**
 
-![Screenshot bug 1](/assets/images/bug2.png)
+![Screenshot bug 3](/assets/images/bug2.png)
 
 
 ### Validation
