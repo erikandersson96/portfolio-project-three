@@ -49,7 +49,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
-    * [Bugs & Solutions](#bugs--solutions)
+    * [Bugs](#bugs)
   * [Validation](#validation)
 
 * [Python Libraries](#python-libraries)
@@ -57,6 +57,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 * [Credits](#credits)
 
 * [Deployment](#deployment)
+  * [Heroku](#heroku)
 
 * [Support](#support) 
 
@@ -187,7 +188,7 @@ If the user input something else then `Y or N` a message will appear to inform t
 
 ### Manual Testing 
 
-#### Bugs that are fixed
+#### Bugs 
 
 * **Bug 1:** 
 Write wrong character option when user answer a question. 
@@ -325,6 +326,9 @@ Cloning a repository inolves making a full copy of a repository on your local ma
 1. The repository clone will now be created on your machine. 
 
 This instructions were taken from [Github - cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
+### Heroku 
+
 
 
 ---
