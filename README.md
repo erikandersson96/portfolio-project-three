@@ -239,8 +239,31 @@ Technologies that I used for this `Formula One Quiz` is the following down below
 ## Testing
 
 ### Manual Testing 
+  
+##### Input 
 
-explain step by step how you tested the program  
+I have tested my program all the time with the wrong type of inputs like: 
+
+* **Menu:** 
+At the menu I have tried to input anything else then `s or S to start the quiz, l or L for leaderboard, r or R for game rules` and the program runs a message that says that I have typed  wrong input and have to try again with a correct one. 
+
+* **Start Quiz:**
+  * **Username:** When the game asks for a username it is expecting only alphabetics and maximun length of 10 characters (so no numbers or special characters!). If I try to type let say: 5 I get a message that says `Not longer then 10 characters. Written with numbers or special characters. Try again!`. Even if I try to write longer then 10 characters I get the same message.
+  * **How many questions?:** When the game asks for how many questions I would like 6 or 12, if I then type in `5` or `a` I will get a message that says 
+  `You didn't Type in '6 or 12'! Please choose only one.`. 
+  * **Question:** When a question is displayed the game is expecting only 1 or 2 as valid inputs but if I try to input `3` or `Hello` I will get a message that says 
+  `Only enter either '1 or 2'. You entered something else...`. 
+  * **Play again, Yes or No:** At the final step of the game were it asks me if I want to play again or exit the game, if I then type in `Banana` or `1` I will get a message that says
+  `You did not Type 'y or Y' for yes to play the quiz again or 'n or N' for no to exit the program. You typed something else, try again.`. 
+
+* **Leaderboard:** When I choose the Leaderboard at the menu and then wish to get back to the Menu, I need to type m or M. But if I try to type something else like `hello` or `2` I will get a pop up message for 3 seconds that says `Did you really press 'm or M'? Try again!`. 
+
+* **Game Rules:** When I choose the Game Rules at the Menu and then wish to get back to the Menu, I need to type m or M. But if I try something else I will get the same pop up message as in leaderboard. 
+
+All checking for validation when expecting a user input works correctly as expected. 
+
+##### Game Play
+
 
 
 ### Bugs 

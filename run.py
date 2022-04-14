@@ -82,9 +82,11 @@ def main_menu_options():
                     break
     except ValueError:
         clear()
-        print("""Wrong...! You did not type 's or S' or 'r or R' to choose
-        either Start Quiz or see the Rules. Please type the following to
-        continue: 's or S' for Start Quiz or 'r or R' to see the Rules.\n""")
+        print("Wrong...! You did not type 's or S', 'l or L' or 'r or R'")
+        print("to choose either Start Quiz, Leaderboard or see the Rules.")
+        print("Please type the following to continue: 's or S' for ")
+        print("Start Quiz,'l or L' for Leaderboard or")
+        print("'r or R' to see the Rules.\n")
         user_game_menu()
 
 
