@@ -6,7 +6,7 @@ in Formula One, play the quiz.
 
 **Remember that all links in this Readme does not open in a new tab. They open in the same window.** 
 
-To play the quiz you can click this [link](link). 
+To play the quiz you can click this [link](https://formula-one-quiz.herokuapp.com/). 
 
 ![Screenshot of Welcome message Formula One Quiz](/assets/images/welcome.png)
 
