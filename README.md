@@ -113,7 +113,7 @@ If the user doesn't care to follow the instructions or accidentally types the wr
 
 When the user selects the `Leaderboard` option he or she will see a leaderboard containing the top 3 finishers of the two different question selections either 6 or 12. When the user want's to exit the leaderboard an get back to the menu there is instructions below that explains this. See the screenshot below:
 
-![Screenshot of leaderboard](/assets/images/)
+![Screenshot of leaderboard](/assets/images/leaderboard.png)
 
 When the user selects the `Game Rules` option he or she will first get a message that welcomes the user to the Game Rules, after that all of the Game Rules will be displayed. When the user want to exit the Game Rules and get back to the menu there is instructions below that explains this. See the screenshot below:
 
@@ -204,7 +204,7 @@ But the end message does not show up at all, the Quiz just goes back to the the 
 ![Screenshot bug 1](/assets/images/bug1.png)
 
 **Solution Bug 1:**
-I was as simple as that I had forgot to add end_message with the correct parameters in the `main()` function.  
+It was as simple as that I had forgot to add end_message with the correct parameters in the `main()` function.  
 
 * **Bug 2:** 
 My leaderboard not showing the correct values. 
