@@ -34,7 +34,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
   * [Visitor Goals](#visitor-goals) 
   * [User Stories](#user-stories) 
 
-* [Website Design]()
+* [Website Design](#website-design)
 
 * [Logic](#logic) 
   * [Flow Diagram](#flow-diagram) 
@@ -54,6 +54,7 @@ The main goal of this project was to test my new knowledge in Python. I decided 
   * [Bugs](#bugs)
   * [Validation](#validation)
   * [User Story Testing](#user-story-testing)
+  * [Device Testing](#)
 
 * [Python Libraries](#python-libraries)
 
@@ -92,7 +93,9 @@ and count how many points the user has scored for each question.
 
 I modified my `CSS` in the `layout.html` file just to add a header `"logo"` above and to center align everything including the terminal. 
 
+This is how it looks on `Heroku`: 
 
+![Screenshot of terminal on heroku app](/assets/images/) 
 
 
 ---
@@ -336,6 +339,11 @@ To meet the expectations in the user stories. I have tested my python project fo
 
 **Result**
 * By adding the functionality to see which question of the selected amount the user is on right above each question. When the user has answered a question and if the user is correct the total points scored will be displayed underneath, but also when the game is finished. 
+
+
+### Device Testing 
+
+Since this project is dependent to run in a mock terminal it is restricted to `desktop` use only, otherwise it will be a bad user experience on a smaller screen device. 
 
 
 ---
