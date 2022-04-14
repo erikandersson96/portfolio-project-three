@@ -158,7 +158,7 @@ def leaderboard():
     except ValueError:
         clear()
         print("Did you really press 'm or M'? Try again!")
-        time.sleep(1)
+        time.sleep(3)
         leaderboard()
 
 

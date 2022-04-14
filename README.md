@@ -209,7 +209,8 @@ If the user input something else then `Y or N` a message will appear to inform t
 
 explain step by step how you tested the program  
 
-#### Bugs 
+
+### Bugs 
  
 * **Bug 1:**
 End message doesn't show up. 
@@ -239,6 +240,14 @@ First I tried to write a whole loop that was going to sort the leaderboard for m
 
 ### Validation
 
+When testing my code in [PEP8 Online](http://pep8online.com/) validation tool I got no errors except that I had no newline at the bottom of the file. But that was only me erasing the last line in `PEP8` before checking my code because I thought that was correct. But since `GitPod` wont let me save my file without erros unless I have a newline at the bottom. Now I have changed that but I want to show a screenshot of the first `PEP8` result and underneath I will show the fixed screenshot. See images below: 
+
+**No Newline:**
+![Screenshot PEP8 validation error](/assets/images/pep8.png)
+
+**With Newline:**
+![Screenshot PEP8 validation no error](/assets/images/pep8-2.png)
+ 
 
 ### User Story Testing 
 
@@ -262,6 +271,8 @@ To meet the expectations in the user stories. I have tested my python project fo
 **Result**
 * By adding the functionality to see which question of the selected amount the user is on right above each question. When the user has answered a question and if the user is correct the total points scored will be displayed underneath, but also when the game is finished. 
 
+
+---
 ## Python Libraries 
 
 **Python libraries used for this project:** 
