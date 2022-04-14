@@ -211,6 +211,31 @@ If I were to use this function I would need to use this combination `start_time 
 
 
 ---
+## Technologies
+
+Technologies that I used for this `Formula One Quiz` is the following down below.
+
+#### Programming Languages 
+
+* [Python](https://www.python.org/) (link): Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
+
+#### Frameworks & Programs 
+
+* [GitHub](https://github.com) (link): GitHub is used to store all data from the project after it has been pushed using the 
+`git add . | git commit -m "message here" | git push` command in the GitPod terminal. 
+
+* [GitPod](https://www.gitpod.io) (link): I used `GitPod` as my `IDE` that stands for `An integrated development environment (IDE) is a software for building applications that combines common developer tools into a single graphical user interface (GUI)`. You can read more about this [here](https://www.gitpod.io/blog/gitpod-launch) (link). 
+
+* [Heroku](https://www.heroku.com) (link): Heroku is a container-based cloud Platform as a Service `(PaaS)`. Developers use Heroku to deploy, manage, and scale modern apps.
+
+* [LucidChart](https://www.lucidchart.com/pages/) (link): Lucidchart is the intelligent diagramming application that empowers teams to clarify complexity, logic and more. To get a better visual understanding about how an application work. 
+
+* [PEP8](http://pep8online.com/) (link): Is a validation tool that I used to validate my code. 
+
+* [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) (link): To generate the `F1 QUIZ` banner in the beginning of my program. 
+
+
+---
 ## Testing
 
 ### Manual Testing 
