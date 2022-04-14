@@ -90,6 +90,8 @@ and count how many points the user has scored for each question.
 ---
 ## Website Design
 
+I modified my `CSS` in the `layout.html` file just to add a header `"logo"` above and to center align everything including the terminal. 
+
 
 
 
