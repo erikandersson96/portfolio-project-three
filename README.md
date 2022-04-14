@@ -34,6 +34,8 @@ The main goal of this project was to test my new knowledge in Python. I decided 
   * [Visitor Goals](#visitor-goals) 
   * [User Stories](#user-stories) 
 
+* [Website Design]()
+
 * [Logic](#logic) 
   * [Flow Diagram](#flow-diagram) 
   * [Comparison](#comparison) 
@@ -83,6 +85,12 @@ and count how many points the user has scored for each question.
 * **A user's perspective:** I want to easily understand the purpose of the website.  
 * **A user's perspective:** I want the quiz to have clear instructions about how the game works. 
 * **A user's perspective:** I want the game to always provide me with information about how many questions I have played and have left, also how many points I have scored. 
+
+
+---
+## Website Design
+
+
 
 
 ---
