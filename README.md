@@ -191,42 +191,31 @@ If the user input something else then `Y or N` a message will appear to inform t
 explain step by step how you tested the program  
 
 #### Bugs 
-
-* **Bug 1:** 
-Write wrong character option when user answer a question. 
-When playing the quiz, if the user inputs a wrong character instead of '1 or 2' which are the only accepted answers the 
-user will get a warning that says `"Only enter eiter '1 or 2'. You entered something else. "` to let the user know that 
-he or she didn't input a valid value. But if the user then tries to choose either '1 or 2' the program will repeat the same 
-issue and won't let the user input the valid value to countinue the quiz. 
+ 
+* **Bug 1:**
+End message doesn't show up. 
+When the user has answered all of the selected questions (6 or 12). The end message should show up with: 
+`Well done! I hope your Formula One knowledge got a little better with this quiz.`, `{user_name} you scored at total of {point} points!`.
+`{user_name}` and `{points}` is used in an f-string to input the user name of the user and the total points that the user scored. 
+But the end message does not show up at all, the Quiz just goes back to the the meny. Like shown in the screenshot below:
 
 **Screenshot:**
 
-![Screenshot bug 1](/assets/images/bug1.png) 
+![Screenshot bug 1](/assets/images/bug1.png)
 
+**Solution Bug 1:**
+I was as simple as that I had forgot to add end_message with the correct parameters in the `main()` function.  
 
 * **Bug 2:** 
-When exit the game Rules. 
-When the user is finsihed reading the game Rules for the quiz, he or she is supposed to Type 'm or M' and then press enter to 
-get back to the Meny. But when the user does this the program doesn't respond correctly before the user tries for the second time. 
-When the user types 'm or M' and press enter, first nothing happens so when the user then repeat's the process a second time the program 
-responds and get the user back to the Meny but it gives the user a error message above the Meny that the user didn't use the correct 
-command. So the program gets quite confusing for the user when this bug happens. 
+My leaderboard not showing the correct values. 
+When I tried to run my leaderboard I only got the id of worksheet 6 and 12, not the actual users and points. Like shown in the screenshot below: 
 
 **Screenshot:** 
 
 ![Screenshot bug 2](/assets/images/bug2.png)
 
-
-* **Bug 3:**
-End message doesn't show up. 
-When the user has answered all of the selected questions (6 or 12). The end message should show up with: 
-`Well done! I hope your Formula One knowledge got a little better with this quiz.`, `{user_name} you scored at total of {point} points!`.
-`{user_name}` and `{points}` is used in an f-string to input the user name of the user and the total points that the user scored. 
-But the end message does not show up at all, the Quiz just goes back to the the meny with the same error above the meny as with **Bug 2**. 
-
-**Screenshot:**
-
-![Screenshot bug 3](/assets/images/bug2.png)
+**Solution Bug 2:**
+First I tried to write a whole loop that was going to sort the leaderboard for me so I could get the correct order for the user who was number one and the third for the user who was number three in the ranking. But after speaking to my mentor, Benjamin suggested me to search for `GSPREAD documentation` and the sort method. And I found in that documentation the `sort()` method. Instead of trying to reinvent the wheel I just had to use the sort() method. Here is a link to the [sort()](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) method for GSPREAD. 
 
 
 ### Validation
@@ -273,6 +262,10 @@ My mentor [Benjamin Kavanagh](https://github.com/BAK2K3) suggested me to use [py
 `Start Screen` that says `F1 QUIZ`. 
 
 ![Screenshot of pyfiglet](/assets/images/pyfiglet.png)
+
+I used the `sort()` method for sorting my leaderboard rankings, I found this method in the documentation for `GSPREAD`. It can be found [here](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) (link). 
+
+![Screenshot of sort() method GSPREAD docs](/assets/images/sort.png)
 
 ---
 ## Deployment 

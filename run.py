@@ -131,18 +131,18 @@ def leaderboard():
     leader_twelve = get_score_from_sheet(12)
     print("6 Questions:\n")
     if len(leader_six) < 3:
-        leaders = len(leader_six) 
-    else: 
+        leaders = len(leader_six)
+    else:
         leaders = 3
-    for i in range(leaders): 
+    for i in range(leaders):
         print(f"{i + 1}) {leader_six[i][0]} {leader_six[i][1]} Points\n")
     print("")
     print("12 Questions:\n")
     if len(leader_twelve) < 3:
-        leaders = len(leader_twelve) 
-    else: 
+        leaders = len(leader_twelve)
+    else:
         leaders = 3
-    for i in range(leaders): 
+    for i in range(leaders):
         print(f"{i + 1}) {leader_twelve[i][0]} {leader_twelve[i][1]} Points\n")
     print("")
     print("")
@@ -221,17 +221,6 @@ def get_score_from_sheet(which_quiz):
     googlesheet.sort((2, "des"))
     googlesheet_values = googlesheet.get_all_values()
     return googlesheet_values
-    """
-    score = googlesheet_values
-    score_length = len(score)
-    for x in range(0, score_length):
-        for i in range(0, score_length-x-1):
-            if int(score[i][1]) > int(score[i + 1][1]):
-                player = score[i]
-                score[i] = score[i + 1]
-                score[i + 1] = player
-    return score[score_length - (position)]
-    """
 
 
 def start_random_quiz(amount_questions):
@@ -323,7 +312,8 @@ def user_to_leaderboard(amount_questions, user_name, point):
 
 def end_message(user_name, point):
     """
-    End message with information about the users name and point
+    End message with information about the users name and point that the user
+    scored
     """
     clear()
     print("Well done! I hope your Formula One knowledge got a little")
