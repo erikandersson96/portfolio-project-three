@@ -264,7 +264,7 @@ All checking for validation when expecting a user input works correctly as expec
 
 ##### Game Play
 
-
+Throughout the whole development of this Quiz I have tested the game in the GitPod terminal to see that my functions are working as expected, but also to debugg my code if my program have not operated as I expected it to do. 
 
 ### Bugs 
  
