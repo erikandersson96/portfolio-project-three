@@ -128,22 +128,22 @@ def leaderboard():
     print("******* Leaderboard *******")
     print("")
     leader_six = get_score_from_sheet(6)
-    second_place_six = get_score_from_sheet(6)
-    third_place_six = get_score_from_sheet(6)
     leader_twelve = get_score_from_sheet(12)
-    second_place_twelve = get_score_from_sheet(12)
-    third_place_twelve = get_score_from_sheet(12)
     print("6 Questions:\n")
-    print("Name" + " " * 4 + "Points\n")
-    print(leader_six[0])
-    print(second_place_six[1])
-    print(third_place_six[2])
+    if len(leader_six) < 3:
+        leaders = len(leader_six) 
+    else: 
+        leaders = 3
+    for i in range(leaders): 
+        print(f"{i + 1}) {leader_six[i][0]} {leader_six[i][1]} Points\n")
     print("")
     print("12 Questions:\n")
-    print("Name" + " " * 4 + "Points\n")
-    print(leader_twelve[0])
-    print(second_place_twelve[1])
-    print(third_place_twelve[2])
+    if len(leader_twelve) < 3:
+        leaders = len(leader_twelve) 
+    else: 
+        leaders = 3
+    for i in range(leaders): 
+        print(f"{i + 1}) {leader_twelve[i][0]} {leader_twelve[i][1]} Points\n")
     print("")
     print("")
     print("Return to menu, Type 'm or M'")
@@ -218,6 +218,7 @@ def get_score_from_sheet(which_quiz):
         googlesheet = SHEET.worksheet('questions-6')
     elif which_quiz == 12:
         googlesheet = SHEET.worksheet('questions-12')
+    googlesheet.sort((2, "des"))
     googlesheet_values = googlesheet.get_all_values()
     return googlesheet_values
     """
@@ -240,9 +241,9 @@ def start_random_quiz(amount_questions):
     """
     quiz_question = []
     full_questions = formula_questions.copy()
-    for question in range(amount_questions):
-        x = random.randint(0, (len(full_questions)-1))
-        quiz_question.append(full_questions.pop(x))
+    for _ in range(amount_questions):
+        q_num = random.randint(0, (len(full_questions)-1))
+        quiz_question.append(full_questions.pop(q_num))
     return quiz_question
 
 

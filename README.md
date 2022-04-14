@@ -188,6 +188,8 @@ If the user input something else then `Y or N` a message will appear to inform t
 
 ### Manual Testing 
 
+explain step by step how you tested the program  
+
 #### Bugs 
 
 * **Bug 1:** 
