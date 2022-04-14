@@ -67,7 +67,7 @@ def main_menu_options():
     """
     try:
         while True:
-            option = input("").upper()
+            option = input("\n").upper()
             if option not in ["S", "L", "R"]:
                 raise ValueError
             else:
@@ -106,7 +106,7 @@ def game_rules():
     print("Type 'm or M' to return to the Menu.")
     try:
         while True:
-            back_to_menu = input("").upper()
+            back_to_menu = input("\n").upper()
             if back_to_menu not in ["M"]:
                 raise ValueError
             else:
@@ -151,7 +151,7 @@ def leaderboard():
     print("Return to menu, Type 'm or M'")
     try:
         while True:
-            back_to_menu = input("").upper()
+            back_to_menu = input("\n").upper()
             if back_to_menu not in ["M"]:
                 raise ValueError
             else:
@@ -175,7 +175,7 @@ def get_username():
     (not numbers or special characters).\n""")
     try:
         while True:
-            user_name = str(input("Write your username: \n"))
+            user_name = str(input("Write your username:\n"))
             if len(user_name) <= 10 and user_name.isalpha():
                 print("")
                 print(f"Thank you {user_name}!")
@@ -321,7 +321,7 @@ def end_message(user_name, point):
     print("Well done! I hope your Formula One knowledge got a little")
     print("better with this quiz.\n")
     print(f"{user_name} you scored at total of {point} points!\n")
-    input("Please press enter to continue...")
+    input("Please press enter to continue...\n")
 
 
 def user_choice_exit():
