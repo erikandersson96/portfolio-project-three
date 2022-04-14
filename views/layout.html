@@ -10,18 +10,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/attach/attach.js"></script>
     <title>Python Terminal by Code Institute</title>
     <style>
+
         body {
             font-family: Arial;
         }
+
+        /**
+        * Added styling for the position of my terminal, the button and added a h1 "logo". 
+        */
 
         #main-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+
+        #background {
+            background: url(https://github.com/erikandersson96/portfolio-project-three/blob/78ed39408d461702505bc549026e98f5f0da5c88/assets/images/background-image.jpg);
+            top: 0;
+            left: 0;
+            z-index: -10;
             height: 100vh;
-            background-image: url(https://github.com/erikandersson96/portfolio-project-three/blob/78ed39408d461702505bc549026e98f5f0da5c88/assets/images/background-image.jpg);
-            background-size: cover;
+            width: 100%;
         }
 
         /**
@@ -181,11 +192,10 @@
         }
     </style>
 </head>
-<body>
-    <main id="main-container">
-        <h1>Welcome To This Formula One Quiz!</h1>
-        @{body}
-    </main>
-</body>
-
+<div id="main-container">
+    <h1>Welcome To This Formula One Quiz!</h1>
+    @{body}
+</div>
+<div id="background"></div>
+      
 </html>
