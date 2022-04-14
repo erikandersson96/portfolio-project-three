@@ -92,7 +92,7 @@ def main_menu_options():
 
 def game_rules():
     """
-    To display the game rules for the user
+    Display the game rules for the user
     """
     clear()
     print("Welcome to Game Rules!")
@@ -214,7 +214,7 @@ def how_many_questions():
 def get_score_from_sheet(which_quiz):
     """
     Get all data from both worksheets 6 and 12 and organize them in order
-    from top to bottom
+    from top to bottom for the leaderboard
     """
     if which_quiz == 6:
         googlesheet = SHEET.worksheet('questions-6')
@@ -240,7 +240,7 @@ def start_random_quiz(amount_questions):
 
 def user_question(quiz_question, amount_questions):
     """
-    Display the random generated question for the user
+    Display the random generated question to the user
     """
     i = 0
     point = 0
@@ -296,7 +296,7 @@ def user_answer_input():
                 return user_answer
         except ValueError:
             print("")
-            print("Only enter eiter '1 or 2'. You entered something else... ")
+            print("Only enter either '1 or 2'. You entered something else... ")
 
 
 def user_to_leaderboard(amount_questions, user_name, point):
