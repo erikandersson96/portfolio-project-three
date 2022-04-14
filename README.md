@@ -49,15 +49,15 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
-    * [Bugs](#bugs)
+  * [Bugs](#bugs)
   * [Validation](#validation)
+  * [User Story Testing](#user-story-testing)
 
 * [Python Libraries](#python-libraries)
 
 * [Credits](#credits)
 
 * [Deployment](#deployment)
-  * [Heroku](#heroku)
 
 * [Support](#support) 
 

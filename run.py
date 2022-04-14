@@ -211,7 +211,7 @@ def how_many_questions():
 
 def get_score_from_sheet(which_quiz):
     """
-    Get all data from both worksheets 6 and 12 to organize them in order
+    Get all data from both worksheets 6 and 12 and organize them in order
     from top to bottom
     """
     if which_quiz == 6:
