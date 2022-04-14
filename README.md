@@ -203,6 +203,14 @@ If the user input something else then `Y or N` a message will appear to inform t
 
 
 ---
+## Future Features 
+
+A feature that I would like to add that I didn't have the time for to add to this project is the abilty to record the time that the user takes to answer each question. 
+So the `Formula One Quiz` would have been a little more challenging amongst friends when they are playing against eachother and the also implement the time to the leaderboard. 
+If I were to use this function I would need to use this combination `start_time = time.time() and end_time = time.time()`.  
+
+
+---
 ## Testing
 
 ### Manual Testing 
