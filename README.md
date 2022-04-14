@@ -235,7 +235,7 @@ When I tried to run my leaderboard I only got the id of worksheet 6 and 12, not 
 ![Screenshot bug 2](/assets/images/bug2.png)
 
 **Solution Bug 2:**
-First I tried to write a whole loop that was going to sort the leaderboard for me so I could get the correct order for the user who was number one and the third for the user who was number three in the ranking. But after speaking to my mentor, Benjamin suggested me to search for `GSPREAD documentation` and the sort method. And I found in that documentation the `sort()` method. Instead of trying to reinvent the wheel I just had to use the sort() method. Here is a link to the [sort()](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) method for GSPREAD. 
+First I tried to write a whole loop that was going to sort the leaderboard for me so I could get the correct order for the user who was number one and the third for the user who was number three in the ranking. But after speaking to my mentor, [Benjamin](https://github.com/BAK2K3) (link) suggested me to search for `GSPREAD documentation` and the sort method. And I found in that documentation the `sort()` method. Instead of trying to reinvent the wheel I just had to use the sort() method. Here is a link to the [sort()](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) method for GSPREAD. 
 
 
 ### Validation
