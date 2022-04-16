@@ -1,6 +1,12 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+"""
+Python 3 project.
+Portfolio Project 3: Formula One Quiz.
+Developed and written by Erik Andersson, April 2022.
+My code is custom written to fit mock terminal on Heroku,
+with 80 characters wide and 24 rows high.
+"""
+# These are python libraries and imports from those libraries
+# from questions import formula_questions is to import questions
 from questions import formula_questions
 import os
 import time
@@ -17,6 +23,7 @@ SCOPE = [
     ]
 
 
+# Credential values the same as Code Institute Love Sandwiches project
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
@@ -26,6 +33,7 @@ SHEET = GSPREAD_CLIENT.open('formula_one_quiz')
 def clear():
     """
     This function adds the ability to clear the terminal to get more space
+    in some functions
     """
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -44,8 +52,8 @@ def game_start():
 
 def user_game_menu():
     """
-    Game meny with the two options of either start the quiz or watch game
-    rules for the quiz
+    Game meny with three options of either start the quiz, see leaderboard
+    or watch game rules for the quiz
     """
     print("Are you ready for some Formula One questions?\n")
     print("Select either Start Quiz or Rules in the menu below by")
@@ -92,7 +100,7 @@ def main_menu_options():
 
 def game_rules():
     """
-    Display the game rules for the user
+    Display the game rules of Formula One Quiz to the user
     """
     clear()
     print("Welcome to Game Rules!")
@@ -121,7 +129,7 @@ def game_rules():
 
 def leaderboard():
     """
-    Displays leaderboard to the user
+    Leaderboard() is used display the leaderboard rankings for the user
     """
     clear()
     print("Loading...")
@@ -167,6 +175,7 @@ def leaderboard():
 def get_username():
     """
     Get the users name to make the Quiz more personal for the player
+    and later add it to the leaderboard worksheet
     """
     clear()
     print("""Before we can start the quiz for you, you need a username!\n
@@ -191,7 +200,8 @@ def get_username():
 
 def how_many_questions():
     """
-    User get to choose to play either 6 or 12 questions
+    User get to choose to play either 6 or 12 questions out of 12
+    questions
     """
     print("")
     print("Loading quiz...")
@@ -213,7 +223,7 @@ def how_many_questions():
 
 def get_score_from_sheet(which_quiz):
     """
-    Get all data from both worksheets 6 and 12 and organize them in order
+    Import all data from both worksheets 6 and 12 and organize them in order
     from top to bottom for the leaderboard
     """
     if which_quiz == 6:
@@ -240,7 +250,8 @@ def start_random_quiz(amount_questions):
 
 def user_question(quiz_question, amount_questions):
     """
-    Display the random generated question to the user
+    Display the random generated question to the user from
+    start_random_quiz function
     """
     i = 0
     point = 0
