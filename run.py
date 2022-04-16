@@ -44,7 +44,6 @@ def game_start():
     """
     clear()
     print("")
-    print("Hello player! Welcome to this Formula One Quiz!\n")
     f1_text = pyfiglet.figlet_format("F 1  Q U I Z", font="3-d")
     print(f1_text)
     user_game_menu()
