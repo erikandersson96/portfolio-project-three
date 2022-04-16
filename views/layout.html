@@ -32,6 +32,29 @@
             width: 100%;
         }
 
+        footer {
+            text-align: center;
+        }
+
+        .social-media-links {
+            padding-left: 0;
+        }
+
+        .social-media-links > li {
+            display: inline;
+        }
+
+        .social-media-links i {
+            font-size: 30px;
+            padding-left: 0;
+            margin: 20px;
+            color: black;
+        }
+
+        .social-media-links i:hover {
+            color: black;
+        }
+
         /**
         * Default styles for xterm.js
         */
@@ -184,9 +207,6 @@
             border-radius: 8px;
         } 
 
-        button:hover {
-            cursor: pointer;
-        }
     </style>
 </head>
 <div id="background-color">
@@ -194,5 +214,22 @@
        <h1>Welcome To This Formula One Quiz!</h1>
        @{body}
    </div>
-</div>     
+   <div id="share-text">
+       <h2>Please share this game with your friends! :)</h2>
+      <footer>
+         <ul class="social-media-links">
+             <li>
+                <a href="http://instagram.com" target="_blank" rel="noopener"
+                aria-label="Go to our instagram(in new tab)"><i class="fab fa-instagram-square"></i></a>
+             </li>
+             <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                aria-label="Go to our facebook(in new tab)"><i class="fab fa-facebook-square"></i></a>
+             </li>
+         </ul>
+     </footer>
+   </div>
+</div> 
+<!-- Font Awesome script-->
+<script src="https://kit.fontawesome.com/30ada26aa3.js" crossorigin="anonymous"></script>    
 </html>
