@@ -56,8 +56,8 @@ def user_game_menu():
     or watch game rules for the quiz
     """
     print("Are you ready for some Formula One questions?\n")
-    print("Select either Start Quiz or Rules in the menu below by")
-    print("following the instructions underneath the menu options.")
+    print("Select either Start Quiz, Leaderboard or Game Rules in the menu")
+    print("below by following the instructions underneath the menu options.")
     print("""
     -        Start Quiz        -
     -        Leaderboard       -
