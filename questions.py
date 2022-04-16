@@ -19,7 +19,7 @@ Toro Rosso in 2015? ",
     },
     {
         "question": "Lewis Hamilton won his first Formula 1 \
-World Championship in 2008, but by how many points?",
+World Championship in 2008, by how  many points?",
         "options": ["3 points", "1 points"],
         "correct": "1 points"
     },
@@ -31,7 +31,7 @@ they clinched their second Formula 1 World Championship?",
     },
     {
         "question": "Hamilton took his first Grand Slam, pole position, \
-win, and every lap led. In what Grand Prix of 2014?",
+win, and every lap led. In   what Grand Prix of 2014?",
         "options": ["Malaysia", "Monza"],
         "correct": "Malaysia"
     },
