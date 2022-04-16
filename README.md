@@ -444,6 +444,7 @@ Deploying a project using Heroku:
 * Once the buildpacks have completed, got to the deploy screen, once in the deploy screen, select GitHub as the deployment method and connect your GitHub profile. 
 * Search for the repository that you wish to deploy to `Heroku` and click `"connect"`. 
 * Once your repository is connected to Heroku you can choose to either automatically or manually deploy your app. 
+* I choose manual deploy beacuse I like to refresh the branch myself when I update my project. 
 * By selecting automatic deploy, Heroku will build a new version of the app each time a change has been made and pushed to the repository on `GitHub`. 
 * By selecting manual deploys, it allows you to build a new version of your app whenever you click manual deploy. 
 * If your build is successful you will then be able to visit the live site by clicking the link that is provided to you by `Heroku`. 

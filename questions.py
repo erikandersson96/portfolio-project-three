@@ -59,7 +59,7 @@ classified finishers in 2020?",
     },
     {
         "question": "Daniel Ricciardo paid tribute to which of these \
-persons with a special helmet 2020?",
+persons with a special helmet in 2020?",
         "options": ["Kobe Bryant", "Diego Maradona"],
         "correct": "Kobe Bryant"
     },
