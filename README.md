@@ -53,7 +53,7 @@ Good luck! And have fun.
 
 * [Logic](#logic) 
   * [Flow Diagram](#flow-diagram) 
-  * [Comparison](#comparison) 
+  * [Explain Logic in Flow Diagram](#explain-logic-in-flow-chart) 
 
 * [Existing Features](#existing-features)
   * [Start Screen](#start-screen)
@@ -69,7 +69,7 @@ Good luck! And have fun.
   * [Bugs](#bugs)
   * [Validation](#validation)
   * [User Story Testing](#user-story-testing)
-  * [Device Testing](#)
+  * [Device Testing](#device-testing)
 
 * [Python Libraries](#python-libraries)
 
