@@ -16,7 +16,7 @@
         }
 
         /**
-        * Added styling for the position of my terminal, the button and added a h1 "logo". 
+        * Added styling for the position of my terminal, the background color and added a h1 "logo". 
         */
 
         #main-container {
@@ -201,6 +201,10 @@
             text-decoration: underline;
         }
 
+        /*
+        * I added my own color for the button and some styling to it. 
+        */
+
         button {
             width: 200px;
             height: 40px;
@@ -215,13 +219,18 @@
 
     </style>
 </head>
+
+<!-- Here I added a main div with id background-color to set the red background-->
+
 <div id="background-color">
+    <!-- Here I added a child div with id main-container to set the center align for all the website content-->
    <div id="main-container">
        <h1>Welcome To This Formula One Quiz!</h1>
        @{body}
    </div>
    <div id="share-text">
        <h2>Please share this game with your friends!<i class="far fa-flag-checkered"></i></h2>
+       <!-- Social Media Links -->
       <footer>
          <ul class="social-media-links">
              <li>
