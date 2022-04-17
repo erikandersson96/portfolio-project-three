@@ -355,6 +355,8 @@ Heroku Status page:
 
 ![Screenshot heroku server status page](/assets/images/heroku-server.png)
 
+Everything In my heroku app works, this was just some smaller changes that I would have done to improve the user experience. 
+
 
 ### Validation
 
