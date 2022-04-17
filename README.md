@@ -8,7 +8,7 @@ in Formula One, play the quiz.
 
 To play the quiz you can click this [link](https://formula-one-quiz.herokuapp.com/). 
 
-![Screenshot of Welcome message Formula One Quiz](/assets/images/welcome.png)
+![Screenshot of Welcome message Formula One Quiz](/assets/images/responsive.png)
 
 
 ---
@@ -104,11 +104,18 @@ and count how many points the user has scored for each question.
 ---
 ## Website Design
 
-I modified my `CSS` in the `layout.html` file just to add a header `"logo"` above and to center align everything including the terminal. 
+I modified my `CSS` in the `layout.html` file to add a header `"logo"` above to center align everything including the terminal, I added a `h2` message below and both 
+`Instagram and Facebook`. I also added a background color of red. 
 
 This is how it looks on `Heroku`: 
 
-![Screenshot of terminal on heroku app](/assets/images/) 
+![Screenshot of terminal on heroku app](/assets/images/heroku.png) 
+
+The red color I choose for the background serves a puspose since it is the same red color code that `Ferrari F1 Team` use for their 2022 formula one car. 
+
+Here is a image of `Ferrari F1 Team 2022 formula one car` color code: 
+
+![Screenshot of Ferrari F1 Team 2022 formula one car color code](/assets/images/ferrari.png)
 
 
 ---
