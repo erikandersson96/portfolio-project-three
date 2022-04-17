@@ -193,7 +193,7 @@ When the user types in his or her username and accidentally types anything else 
 
 ### Question Selection 
 
-After the user has selected a valid `username` he or she wiill be asked how many questions to play either `6 or 12`. See the screenshot below:
+After the user has selected a valid `username` he or she will be asked how many questions to play either `6 or 12`. See the screenshot below:
 
 ![Screenshot of question selection](/assets/images/amount-questions.png)
 
@@ -244,7 +244,7 @@ A feature that I would like to add that I didn't have the time for to add to thi
 So the `Formula One Quiz` would have been a little more challenging amongst friends when they are playing against eachother and the also implement the time to the leaderboard. 
 If I were to use this function I would need to use this combination `start_time = time.time() and end_time = time.time()`.  
 
-Add some extra time delays for the correct or wrong answers for the user. But since `Heroku` updated their process for deployment I felt unsure about how to update my code push it and then create a new app to with new config vars. I tried to do this but then my app wasn't created in some wierd way even when I followed the steps for manual deploy thru `Gitpod` terminal. 
+Add some extra time delays for the correct or wrong answers for the user. But since `Heroku` updated their process for deployment I felt unsure about how to update my code push it and then create a new app with new config vars. I tried to do this but then my app wasn't created in some wierd way even when I followed the steps for manual deploy thru `Gitpod` terminal. 
 The app might have some bad user experience now because the time delay is a bit short, but I am fully aware of it and I would have changed it if I knew how to solve this manual heroku deployment problem. When my experience gets better I will be better for improving this in the future for future projects. 
 
 
@@ -315,9 +315,9 @@ But the end message does not show up at all, the Quiz just goes back to the the 
 
 **Screenshot:**
 
-![Screenshot bug 1](/assets/images/bug1.png)
+![Screenshot bug 1](/assets/images/welcome-wrong.png)
 
-**Solution Bug 1:**
+* **Solution Bug 1:**
 It was as simple as that I had forgot to add end_message with the correct parameters in the `main()` function.  
 
 * **Bug 2:** 
@@ -328,7 +328,7 @@ When I tried to run my leaderboard I only got the id of worksheet 6 and 12, not 
 
 ![Screenshot bug 2](/assets/images/bug2.png)
 
-**Solution Bug 2:**
+* **Solution Bug 2:**
 First I tried to write a whole loop that was going to sort the leaderboard for me so I could get the correct order for the user who was number one and the third for the user who was number three in the ranking. But after speaking to my mentor, [Benjamin](https://github.com/BAK2K3) (link) suggested me to search for `GSPREAD documentation` and the sort method. And I found in that documentation the `sort()` method. Instead of trying to reinvent the wheel I just had to use the sort() method. Here is a link to the [sort()](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) method for GSPREAD.  
 
 
@@ -404,7 +404,7 @@ My mentor [Benjamin Kavanagh](https://github.com/BAK2K3) suggested me to use [py
 
 ![Screenshot of pyfiglet](/assets/images/pyfiglet.png)
 
-I used the `sort()` method for sorting my leaderboard rankings, I found this method in the documentation for `GSPREAD`. It can be found [here](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) (link). 
+I used the `sort()` method after suggested to do so by my mentor [Benjamin Kavanagh](https://github.com/BAK2K3) for sorting my leaderboard rankings, I found this method in the documentation for `GSPREAD`. It can be found [here](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) (link). 
 
 ![Screenshot of sort() method GSPREAD docs](/assets/images/sort.png)
 
@@ -485,6 +485,12 @@ Deploying a project using Heroku:
 * By selecting automatic deploy, Heroku will build a new version of the app each time a change has been made and pushed to the repository on `GitHub`. 
 * By selecting manual deploys, it allows you to build a new version of your app whenever you click manual deploy. 
 * If your build is successful you will then be able to visit the live site by clicking the link that is provided to you by `Heroku`. 
+
+New way of deploy project to heroku: 
+* When you want to deploy your project to `Heroku`. 
+* Type `heroku login -i` to login to your existing account (if you have one) in the `Gitpod` terminal. 
+* Then run the command `heroku create your_app_name_here` to create a new app (the name has to be uniqe). 
+* Now you can see your new project at `Heroku` dashboard and set the config vars and buildpacks as the steps explained above. 
 
 The command to add packages to the requirments.txt file, `pip3 freeze --local > requirments.txt`. 
 
