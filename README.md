@@ -36,6 +36,8 @@ You will have to Type either '1' or '2' to select the answer you think is the co
 
 The quiz will countinue until all questions has been played for the selected amount of questions. 
 
+When you are finished with all of the selected questions you get asked to play again, if you press "N" (no) to exit. Just reload the page and the game will restart. 
+
 Good luck! And have fun. 
 
 
