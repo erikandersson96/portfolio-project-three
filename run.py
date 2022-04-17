@@ -185,7 +185,7 @@ def get_username():
         while True:
             user_name = str(input("Write your username:\n"))
             if len(user_name) <= 10 and user_name.isalpha():
-                print("")
+                clear()
                 print(f"Thank you {user_name}!")
                 return user_name
             else:
@@ -268,10 +268,12 @@ def user_question(quiz_question, amount_questions):
             point += 1
             print("Correct! Well done. You scored 1 point!\n")
             print(f"Your current score: {point} points!\n")
+            time.sleep(2)
         else:
             print("Oh no you guessed wrong. 0 points for this question.")
             print("Better luck in the next question!\n")
             print(f"You have: {point} points this far!\n")
+            time.sleep(2)
         time.sleep(1)
         i += 1
         clear()
