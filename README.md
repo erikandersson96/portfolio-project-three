@@ -27,6 +27,19 @@ The main goal of this project was to test my new knowledge in Python. I decided 
 * To get people more educated about the sport of Formula One. 
 
 
+---
+## How To Play 
+
+This quiz consists of 6 or 12 questions, and the answer for each question will be either one of two options that are displayed underneath. 
+
+You will have to Type either '1' or '2' to select the answer you think is the correct one and press Enter.
+
+The quiz will countinue until all questions has been played for the selected amount of questions. 
+
+Good luck! And have fun. 
+
+
+---
 ## Table of Contents
 
 * [UX](#ux) 
