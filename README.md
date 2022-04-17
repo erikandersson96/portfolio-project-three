@@ -244,6 +244,9 @@ A feature that I would like to add that I didn't have the time for to add to thi
 So the `Formula One Quiz` would have been a little more challenging amongst friends when they are playing against eachother and the also implement the time to the leaderboard. 
 If I were to use this function I would need to use this combination `start_time = time.time() and end_time = time.time()`.  
 
+Add some extra time delays for the correct or wrong answers for the user. But since `Heroku` updated their process for deployment I felt unsure about how to update my code push it and then create a new app to with new config vars. I tried to do this but then my app wasn't created in some wierd way even when I followed the steps for manual deploy thru `Gitpod` terminal. 
+The app might have some bad user experience now because the time delay is a bit short, but I am fully aware of it and I would have changed it if I knew how to solve this manual heroku deployment problem. When my experience gets better I will be better for improving this in the future for future projects. 
+
 
 ---
 ## Technologies
@@ -326,36 +329,7 @@ When I tried to run my leaderboard I only got the id of worksheet 6 and 12, not 
 ![Screenshot bug 2](/assets/images/bug2.png)
 
 **Solution Bug 2:**
-First I tried to write a whole loop that was going to sort the leaderboard for me so I could get the correct order for the user who was number one and the third for the user who was number three in the ranking. But after speaking to my mentor, [Benjamin](https://github.com/BAK2K3) (link) suggested me to search for `GSPREAD documentation` and the sort method. And I found in that documentation the `sort()` method. Instead of trying to reinvent the wheel I just had to use the sort() method. Here is a link to the [sort()](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) method for GSPREAD. 
-
-**Bug Heroku:**
-
-When I wanted to add an extra `time.sleep(2)` to delay the message that says that the user had answered the question with the wrong answer, I couldn't authorize my `Github` to `Heroku` because of internal server problems at `Heroku`. I also tried to add an extra `clear()` to clear the terminal when the user had added his or hers accepted username. 
-I deleted the changes that I did because of this server problem. 
-
-Here is a screenshot of where I wanted to delay the code for 2 seconds (I have commented in th function were I wanted to do the change):
-
-![Screenshot server error heroku time.sleep](/assets/images/heroku-sleep.png)
-
-Here is a screenshot of where I intended to add the `clear` function but didn't because of this server problem with `Heroku`: 
-
-![Screenshot server error heroku clear()](/assets/images/clear.png)
-
-**Screenshots of Heroku server problems:**
-
-Authorize GitHub: 
-
-![Screenshot Authorize GitHub](/assets/images/authorize.png)
-
-Heroku server message: 
-
-![Screenshot server message](/assets/images/server-error.png)
-
-Heroku Status page: 
-
-![Screenshot heroku server status page](/assets/images/heroku-server.png)
-
-Everything In my heroku app works, this was just some smaller changes that I would have done to improve the user experience. 
+First I tried to write a whole loop that was going to sort the leaderboard for me so I could get the correct order for the user who was number one and the third for the user who was number three in the ranking. But after speaking to my mentor, [Benjamin](https://github.com/BAK2K3) (link) suggested me to search for `GSPREAD documentation` and the sort method. And I found in that documentation the `sort()` method. Instead of trying to reinvent the wheel I just had to use the sort() method. Here is a link to the [sort()](https://docs.gspread.org/en/latest/api.html?highlight=sort#gspread.worksheet.Worksheet.sort) method for GSPREAD.  
 
 
 ### Validation
