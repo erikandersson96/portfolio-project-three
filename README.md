@@ -71,6 +71,8 @@ Good luck! And have fun.
 
 * [Python Libraries](#python-libraries)
 
+* [Content](#content)
+
 * [Credits](#credits)
 
 * [Deployment](#deployment)
@@ -375,6 +377,18 @@ Since this project is dependent to run in a mock terminal it is restricted to `d
 * **Random:** I had to import random in order for me to generate a random order of the questions for the user. 
 This Formula One Quiz was created with the intention to test peoples knowledge in the sport. A game that people can share among their friends and family to challenge each other's knowledge. Here you can take a look at the website of [Random](https://docs.python.org/3/library/random.html) (link).
 * **Pyfiglet:** I choose to import [pyfiglet](https://pypi.org/project/pyfiglet/0.7/) (link) so I could display `"F1 QUIZ"` in a 3d look without the need to create it myself. Take a look at their website to get all of the instructions to how you can implement it your self to your next python project. 
+
+
+---
+## Content
+
+#### Media 
+
+The `Ferrari red` color for the background was taken from [color-hex](https://www.color-hex.com/color/a6051a) (link), you can take a look at the color at their website by cliking the link. 
+
+#### Footer 
+
+The `footer` with the icons for the different social media links was taken from [Font Awesome](https://fontawesome.com/) (link).
 
 
 ---
