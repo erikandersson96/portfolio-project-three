@@ -8,7 +8,7 @@ in Formula One, play the quiz.
 
 To play the quiz you can click this [link](https://formula-one-quiz.herokuapp.com/). 
 
-![Screenshot of Welcome message Formula One Quiz](/assets/images/responsive.png)
+![Screenshot of I am responsive](/assets/images/responsive.png)
 
 
 ---
